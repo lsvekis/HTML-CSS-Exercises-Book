@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ /* Style the first paragraph */
+ p:first-of-type {
+ color: red;
+ }
+ /* Style paragraphs that are directly after h2 elements */
+ h2 + p {
+ font-style: italic;
+ }
+ /* Style the last child paragraph within any div */
+ div p:last-child {
+ font-weight: bold;
+ }
+ </style>
+</head>
+<body>
+<h2>Heading</h2>
+<p>This paragraph is styled italic because it directly follows an h2.</p>
+<p>This is the first paragraph and it is red.</p>
+<div>
+ <p>This paragraph is not bold because it's not the last child.</p>
+ <p>This paragraph is bold because it's the last child within its parent div.</p>
+</div>
+</body>
+</html>
