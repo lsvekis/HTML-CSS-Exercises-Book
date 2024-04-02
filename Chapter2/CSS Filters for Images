@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .original-image {
+ margin: 20px;
+ }
+ .blurred-image {
+ filter: blur(5px);
+ margin: 20px;
+ }
+ .grayscale-image {
+ filter: grayscale(100%);
+ margin: 20px;
+ }
+ </style>
+</head>
+<body>
+<img src="image.jpg" alt="Original Image" class="original-image">
+<img src="image.jpg" alt="Blurred Image" class="blurred-image">
+<img src="image.jpg" alt="Grayscale Image" class="grayscale-image">
+</body>
+</html>
