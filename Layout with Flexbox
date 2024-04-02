@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .flex-container {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ height: 200px;
+ background-color: lightgray;
+ }
+ .flex-item {
+ background-color: cornflowerblue;
+ padding: 20px;
+ margin: 5px;
+ }
+ </style>
+</head>
+<body>
+<div class="flex-container">
+ <div class="flex-item">Flex Item 1</div>
+ <div class="flex-item">Flex Item 2</div>
+ <div class="flex-item">Flex Item 3</div>
+</div>
+</body>
+</html>
