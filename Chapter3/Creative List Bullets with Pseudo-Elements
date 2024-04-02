@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ ul {
+ list-style-type: none;
+ padding-left: 0;
+ }
+ li::before {
+ content: '→';
+ color: #007BFF;
+ display: inline-block;
+ width: 20px;
+ margin-left: -20px;
+ }
+ </style>
+</head>
+<body>
+<ul>
+ <li>Item 1</li>
+ <li>Item 2</li>
+ <li>Item 3</li>
+</ul>
+</body>
+</html>
