@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .custom-cursor {
+ cursor: url('your-cursor-image.cur'), auto;
+ }
+ </style>
+</head>
+<body>
+<div class="custom-cursor" style="margin: 50px; padding: 50px; border: 1px solid #000;">
+ Hover over me to see the custom cursor!
+</div>
+</body>
+</html>
