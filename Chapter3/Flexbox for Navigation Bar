@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .nav {
+ display: flex;
+ justify-content: space-between;
+list-style-type: none;
+padding: 0;
+}
+.nav li {
+ padding: 10px;
+ background-color: #f2f2f2;
+ margin: 5px;
+ }
+ .nav li a {
+ text-decoration: none;
+ color: #333;
+ }
+</style>
+</head>
+<body>
+<ul class="nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+</body>
+</html>
