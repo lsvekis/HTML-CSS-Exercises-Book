@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ :root {
+ --main-bg-color: coral;
+ --main-text-color: white;
+ }
+ body {
+ background-color: var(--main-bg-color);
+ color: var(--main-text-color);
+ }
+ </style>
+</head>
+<body>
+<p>Welcome to the world of CSS variables!</p>
+</body>
+</html>
