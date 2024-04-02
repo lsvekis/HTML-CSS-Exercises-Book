@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ body {
+ background-color: lightgreen;
+ }
+ @media (max-width: 600px) {
+ body {
+ background-color: lightblue;
+ }
+ }
+ </style>
+</head>
+<body>
+<p>Resize the window to see the background color change.</p>
+</body>
+</html>
