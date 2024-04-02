@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .transition-box {
+ width: 100px;
+ height: 100px;
+ background-color: tomato;
+ transition: width 2s, background-color 2s ease-in-out;
+ }
+ .transition-box:hover {
+ width: 200px;
+ background-color: skyblue;
+ }
+ </style>
+</head>
+<body>
+<div class="transition-box"></div>
+</body>
+</html>
