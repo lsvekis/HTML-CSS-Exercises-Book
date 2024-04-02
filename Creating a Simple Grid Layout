@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .grid-container {
+ display: grid;
+ grid-template-columns: auto auto auto;
+ gap: 10px;
+ background-color: #f2f2f2;
+ }
+ .grid-item {
+ background-color: rgba(255, 99, 71, 0.6);
+ padding: 20px;
+ text-align: center;
+ }
+ </style>
+</head>
+<body>
+<div class="grid-container">
+ <div class="grid-item">1</div>
+ <div class="grid-item">2</div>
+ <div class="grid-item">3</div>
+</div>
+</body>
+</html>
