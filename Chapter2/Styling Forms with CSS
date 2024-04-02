@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .form-input {
+ padding: 10px;
+ margin-bottom: 15px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ }
+ .submit-button {
+ padding: 10px 15px;
+ background-color: dodgerblue;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+ .submit-button:hover {
+ background-color: deepskyblue;
+ }
+ </style>
+</head>
+<body>
+<form>
+ <input type="text" class="form-input" placeholder="Your Name">
+ <input type="email" class="form-input" placeholder="Your Email">
+ <button type="submit" class="submit-button">Submit</button>
+</form>
+</body>
+</html>
