@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .highlighted-text {
+ color: blue;
+ font-size: 20px;
+ text-align: center;
+ }
+ </style>
+</head>
+<body>
+<h1 class="highlighted-text">Hello, CSS World!</h1>
+</body>
+</html>
