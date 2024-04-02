@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ a:link {
+ color: green;
+ }
+ a:visited {
+ color: purple;
+ }
+ a:hover {
+ color: red;
+ }
+ a:active {
+ color: yellow;
+ }
+ </style>
+</head>
+<body>
+<a href="https://www.example.com">Visit Example.com</a>
+</body>
+</html>
