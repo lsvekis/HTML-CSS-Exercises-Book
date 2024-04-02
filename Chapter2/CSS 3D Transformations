@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .container {
+ perspective: 500px;
+ }
+ .cube {
+ width: 100px;
+ height: 100px;
+ background-color: teal;
+ transform: rotateX(45deg) rotateY(45deg);
+ transition: transform 1s;
+ }
+ .cube:hover {
+ transform: rotateX(180deg) rotateY(180deg);
+ }
+ </style>
+</head>
+<body>
+<div class="container">
+ <div class="cube"></div>
+</div>
+</body>
+</html>
