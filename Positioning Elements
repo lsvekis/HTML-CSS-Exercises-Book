@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .relative {
+ position: relative;
+ left: 20px;
+ top: 10px;
+ }
+ .absolute {
+ position: absolute;
+ top: 50px;
+ right: 30px;
+ }
+ .fixed {
+ position: fixed;
+ bottom: 0;
+ right: 0;
+ }
+ </style>
+</head>
+<body>
+<div class="relative">Relative Positioning</div>
+<div class="absolute">Absolute Positioning</div>
+<div class="fixed">Fixed Positioning</div>
+</body>
+</html>
