@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ :root {
+ --primary-color: #007bff;
+ --secondary-color: #6c757d;
+ }
+ body.dark-mode {
+ --primary-color: #343a40;
+ --secondary-color: #007bff;
+ }
+ .container {
+ color: var(--primary-color);
+ background-color: var(--secondary-color);
+ padding: 20px;
+ margin: 20px 0;
+ }
+ </style>
+</head>
+<body class="dark-mode">
+<div class="container">
+ This container adopts the theme's primary and secondary colors.
+</div>
+</body>
+</html>
