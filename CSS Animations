@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes example {
+ from {background-color: red;}
+ to {background-color: yellow;}
+ }
+ .animated-box {
+ width: 100px;
+ height: 100px;
+ background-color: red;
+ animation-name: example;
+ animation-duration: 4s;
+ }
+ </style>
+</head>
+<body>
+<div class="animated-box"></div>
+</body>
+</html>
