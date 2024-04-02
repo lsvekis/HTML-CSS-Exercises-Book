@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .card {
+ background-color: #f2f2f2;
+ padding: 20px;
+ margin-top: 20px;
+ transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+ }
+ .card:hover {
+ transform: scale(1.05);
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ }
+ </style>
+</head>
+<body>
+<div class="card">
+ <h2>Card Title</h2>
+ <p>Some example text some example text. John Doe is an architect and engineer</p>
+</div>
+</body>
+</html>
