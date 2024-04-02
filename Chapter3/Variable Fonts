@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @font-face {
+ font-family: 'VariableFont';
+ src: url('VariableFont.woff2') format('woff2-variations');
+ font-weight: 100 900;
+ }
+ body {
+ font-family: 'VariableFont', sans-serif;
+ }
+ .light {
+ font-weight: 100;
+ }
+ .bold {
+ font-weight: 800;
+ }
+ </style>
+</head>
+<body>
+<p class="light">This is a light text using variable font.</p>
+<p class="bold">This is a bold text using the same variable font.</p>
+</body>
+</html>
