@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .grid-container {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-gap: 10px;
+ padding: 10px;
+ }
+ .grid-item {
+ background-color: rgba(255, 218, 185, 0.8);
+ padding: 20px;
+ text-align: center;
+ border: 1px solid salmon;
+ }
+ </style>
+</head>
+<body>
+<div class="grid-container">
+ <div class="grid-item">1</div>
+ <div class="grid-item">2</div>
+ <div class="grid-item">3</div>
+ <div class="grid-item">4</div>
+ <div class="grid-item">5</div>
+ <div class="grid-item">6</div>
+</div>
+</body>
+</html>
