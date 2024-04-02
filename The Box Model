@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .box {
+ background-color: lightcoral;
+ width: 100px;
+ padding: 20px;
+ border: 5px solid black;
+ margin: 10px;
+ }
+ </style>
+</head>
+<body>
+<div class="box">Content</div>
+</body>
+</html>
