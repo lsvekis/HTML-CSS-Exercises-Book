@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .circle {
+ width: 100px;
+ height: 100px;
+ background-color: red;
+ border-radius: 50%;
+ }
+ .square {
+ width: 100px;
+ height: 100px;
+ background-color: blue;
+ }
+ .triangle {
+ width: 0;
+ height: 0;
+ border-left: 50px solid transparent;
+ border-right: 50px solid transparent;
+ border-bottom: 100px solid green;
+ }
+ </style>
+</head>
+<body>
+<div class="circle"></div>
+<div class="square"></div>
+<div class="triangle"></div>
+</body>
+</html>
