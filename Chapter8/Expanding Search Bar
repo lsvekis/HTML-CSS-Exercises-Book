@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .search-bar {
+ width: 50px;
+ height: 30px;
+ border: 2px solid #ddd;
+ padding: 5px;
+ transition: width 0.4s ease-out;
+ overflow: hidden;
+ cursor: pointer;
+ }
+ .search-bar:focus-within {
+ width: 200px;
+ cursor: text;
+ }
+ .search-bar input[type="text"] {
+ border: none;
+ outline: none;
+ width: 100%;
+ }
+ </style>
+</head>
+<body>
+<div class="search-bar" onclick="this.querySelector('input[type=\'text\']').focus();">
+ <input type="text" placeholder="Search...">
+</div>
+</body>
+</html>
