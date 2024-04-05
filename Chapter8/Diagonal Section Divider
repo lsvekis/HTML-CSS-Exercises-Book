@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
- <style>
- .section {
- position: relative;
- padding: 50px;
- background: #3498db;
- }
- .section + .section {
- background: #2ecc71;
- }
- .section::after {
- content: '';
- position: absolute;
- left: 0;
- right: 0;
- bottom: 0;
- height: 50px;
- background: inherit;
- transform: skewY(-3deg);
- transform-origin: top left;
- }
- </style>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            position: relative;
+            padding: 50px;
+            background: #3498db; /* Blue background */
+            overflow: hidden; /* Ensures no overflow from the pseudo-elements */
+        }
+        .section + .section {
+            background: #2ecc71; /* Green background for the next section */
+        }
+        /* Create a pseudo-element for the first section that overlaps into the next section */
+        .section::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0; /* Position at the bottom */
+            height: 50px; /* Height of the diagonal effect */
+            background: #2ecc71; /* This should be the background color of the NEXT section */
+            transform: skewY(-3deg); /* Creates the diagonal skew */
+            transform-origin: 100%; /* Aligns the skew correctly */
+        }
+    </style>
 </head>
 <body>
 <div class="section">Section 1</div>
 <div class="section">Section 2</div>
+<!-- Additional sections can follow the same pattern -->
 </body>
 </html>
