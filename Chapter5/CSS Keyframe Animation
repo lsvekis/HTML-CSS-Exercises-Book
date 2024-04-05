@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes slidein {
+ from {
+ transform: translateX(0%);
+ }
+ to {
+ transform: translateX(100%);
+ }
+ }
+ .animated-element {
+ width: 100px;
+ height: 100px;
+ background-color: red;
+ animation: slidein 3s infinite alternate;
+ }
+ </style>
+</head>
+<body>
+<div class="animated-element"></div>
+</body>
+</html>
