@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <style>
+ .navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #333;
+ color: #fff;
+ padding: 10px;
+ }
+ .navbar a {
+ color: white;
+ text-decoration: none;
+ padding: 10px;
+ }
+ @media screen and (max-width: 600px) {
+ .navbar a {
+ display: block;
+ text-align: center;
+ }
+ }
+ </style>
+</head>
+<body>
+<div class="navbar">
+ <a href="#">Home</a>
+ <a href="#">About</a>
+ <a href="#">Services</a>
+ <a href="#">Contact</a>
+</div>
+</body>
+</html>
