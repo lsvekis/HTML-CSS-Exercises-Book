@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .image-container {
+ overflow: hidden; /* Ensures the scale effect stays within bounds */
+ }
+ img {
+ width: 100%;
+ transition: transform 0.3s ease;
+ }
+ img:hover {
+ transform: scale(1.1); /* Slightly enlarges the image */
+ }
+ </style>
+</head>
+<body>
+<div class="image-container">
+ <img src="example-image.jpg" alt="Example Image">
+</div>
+</body>
+</html>
