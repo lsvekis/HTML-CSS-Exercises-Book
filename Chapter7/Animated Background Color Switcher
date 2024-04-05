@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .color-switcher {
+ padding: 20px;
+ text-align: center;
+ background-color: #3498db;
+ transition: background-color 0.5s ease;
+ cursor: pointer;
+ }
+ .color-switcher:hover {
+ background-color: #2ecc71;
+ }
+ </style>
+</head>
+<body>
+<div class="color-switcher">Hover over me!</div>
+</body>
+</html>
