@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .clipped-background-text {
+ font-size: 60px;
+ background: linear-gradient(90deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+ -webkit-background-clip: text;
+ color: transparent;
+ font-weight: bold;
+ text-align: center;
+ }
+ </style>
+</head>
+<body>
+<div class="clipped-background-text">Creative Text</div>
+</body>
+</html>
