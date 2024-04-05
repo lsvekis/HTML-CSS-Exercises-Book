@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .gallery {
+ display: flex;
+ flex-wrap: wrap;
+ padding: 0;
+ margin: -5px;
+ }
+ .photo {
+ flex: 1 0 210px;
+ margin: 5px;
+ background-color: #ddd;
+ color: #fff;
+ text-align: center;
+ line-height: 150px;
+ }
+ </style>
+</head>
+<body>
+<div class="gallery">
+ <div class="photo">Photo 1</div>
+ <div class="photo">Photo 2</div>
+ <div class="photo">Photo 3</div>
+ <!-- Add more photos as needed -->
+</div>
+</body>
+</html>
