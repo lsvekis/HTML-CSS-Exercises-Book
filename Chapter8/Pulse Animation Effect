@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes pulse {
+ 0% { transform: scale(1); }
+ 50% { transform: scale(1.2); }
+ 100% { transform: scale(1); }
+ }
+ .pulse {
+ display: inline-block;
+ padding: 20px;
+ background-color: #e74c3c;
+ color: #fff;
+ border-radius: 50%;
+ animation: pulse 2s infinite;
+ }
+ </style>
+</head>
+<body>
+<div class="pulse">!</div>
+</body>
+</html>
