@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .hover-reveal {
+ position: relative;
+ width: 200px;
+ height: 200px;
+ background: #333;
+ color: #fff;
+ overflow: hidden;
+ }
+ .hover-reveal-content {
+ position: absolute;
+ bottom: 0;
+ background: rgba(0, 0, 0, 0.7);
+ width: 100%;
+ transform: translateY(100%);
+ transition: transform 0.5s ease;
+ padding: 10px;
+ }
+ .hover-reveal:hover .hover-reveal-content {
+ transform: translateY(0);
+ }
+ </style>
+</head>
+<body>
+<div class="hover-reveal">
+ Hover over me
+ <div class="hover-reveal-content">Revealed content goes here</div>
+</div>
+</body>
+</html>
