@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ form {
+ background-color: #f2f2f2;
+ padding: 20px;
+ border-radius: 5px;
+ width: 300px;
+ }
+ input[type="text"], input[type="email"], input[type="submit"] {
+ width: 100%;
+ padding: 10px;
+ margin: 10px 0;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+ }
+ input[type="submit"] {
+ background-color: #4CAF50;
+ color: white;
+ cursor: pointer;
+ }
+ input[type="submit"]:hover {
+ background-color: #45a049;
+ }
+ </style>
+</head>
+<body>
+<form>
+ <input type="text" placeholder="Your Name">
+ <input type="email" placeholder="Your Email">
+ <input type="submit" value="Subscribe">
+</form>
+</body>
+</html>
