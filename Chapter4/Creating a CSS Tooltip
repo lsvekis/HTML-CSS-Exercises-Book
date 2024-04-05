@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .tooltip {
+ position: relative;
+ display: inline-block;
+ }
+ .tooltip::before {
+ content: attr(data-tip);
+ position: absolute;
+ bottom: 100%;
+ left: 50%;
+ transform: translateX(-50%);
+ white-space: nowrap;
+ background-color: black;
+ color: white;
+ padding: 5px;
+ border-radius: 4px;
+ display: none;
+ }
+ .tooltip:hover::before {
+ display: block;
+ }
+ </style>
+</head>
+<body>
+<div class="tooltip" data-tip="This is a tooltip!">Hover over me</div>
+</body>
+</html>
