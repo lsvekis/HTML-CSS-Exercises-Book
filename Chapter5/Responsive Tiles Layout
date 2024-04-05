@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .tile-container {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+ gap: 10px;
+ padding: 10px;
+ }
+ .tile {
+ background-color: #ccc;
+ padding: 20px;
+ text-align: center;
+ }
+ </style>
+</head>
+<body>
+<div class="tile-container">
+ <div class="tile">Tile 1</div>
+ <div class="tile">Tile 2</div>
+ <div class="tile">Tile 3</div>
+ <!-- Add more tiles as needed -->
+</div>
+</body>
+</html>
