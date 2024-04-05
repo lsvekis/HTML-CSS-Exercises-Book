@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .card {
+ margin: 20px;
+ padding: 40px;
+ text-align: center;
+ transition: transform 0.3s, box-shadow 0.3s;
+ will-change: transform, box-shadow;
+ }
+ .card:hover {
+ transform: translateY(-10px);
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ </style>
+</head>
+<body>
+<div class="card">Hover over me!</div>
+</body>
+</html>
