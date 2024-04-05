@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .accordion input {
+ display: none;
+ }
+ .accordion label {
+ display: block;
+ background-color: #eee;
+ padding: 10px;
+ border: 1px solid #ddd;
+ margin-top: -1px;
+ cursor: pointer;
+ }
+ .accordion .content {
+ display: none;
+ overflow: hidden;
+ background-color: #f9f9f9;
+ border: 1px solid #ddd;
+ }
+ .accordion input:checked + label + .content {
+ display: block;
+ }
+ </style>
+</head>
+<body>
+<div class="accordion">
+ <input type="checkbox" id="acc1" name="accordion">
+ <label for="acc1">Section 1</label>
+ <div class="content">
+ <p>This is the content of section 1.</p>
+ </div>
+ <input type="checkbox" id="acc2" name="accordion">
+ <label for="acc2">Section 2</label>
+ <div class="content">
+ <p>This is the content of section 2.</p>
+ </div>
+</div>
+</body>
+</html>
