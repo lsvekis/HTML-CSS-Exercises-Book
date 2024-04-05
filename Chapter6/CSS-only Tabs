@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .tab-content {
+ display: none;
+ }
+ .tab-content:target {
+ display: block;
+ }
+ .tabs a {
+ padding: 10px;
+ text-decoration: none;
+ color: #000;
+ background: #eee;
+ margin-right: 5px;
+ }
+ </style>
+</head>
+<body>
+<div class="tabs">
+ <a href="#tab1">Tab 1</a>
+ <a href="#tab2">Tab 2</a>
+</div>
+<div id="tab1" class="tab-content">
+ Content for Tab 1
+</div>
+<div id="tab2" class="tab-content">
+ Content for Tab 2
+</div>
+</body>
+</html>
