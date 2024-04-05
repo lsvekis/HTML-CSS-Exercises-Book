@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .switch {
+ position: relative;
+ display: inline-block;
+ width: 60px;
+ height: 34px;
+ background-color: #e0e0e0;
+ border-radius: 34px;
+ box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px #cbcbcb;
+ transition: background-color 0.2s;
+ }
+ .switch::after {
+ content: "";
+ position: absolute;
+ width: 26px;
+ height: 26px;
+ left: 4px;
+ bottom: 4px;
+ background-color: white;
+ border-radius: 50%;
+ box-shadow: -4px -4px 8px #ffffff, 4px 4px 8px #cbcbcb;
+ transition: transform 0.2s;
+ }
+ .switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+ }
+ .switch input:checked + .switch::after {
+ transform: translateX(26px);
+ box-shadow: -2px -2px 4px #ffffff, 2px 2px 4px #cbcbcb;
+ }
+ .switch input:checked {
+ background-color: #4CAF50;
+ }
+ </style>
+</head>
+<body>
+<label class="switch">
+ <input type="checkbox">
+ <span class="slider"></span>
+</label>
+</body>
+</html>
