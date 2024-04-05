@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .wave {
+ display: inline-block;
+ width: 5px;
+ height: 20px;
+ background-color: blue;
+ margin-right: 2px;
+ animation: waveAnimation 1s infinite ease-in-out;
+ }
+ @keyframes waveAnimation {
+ 0%, 40%, 100% { transform: scaleY(0.4); }
+ 20% { transform: scaleY(1); }
+ }
+ .container {
+ display: flex;
+ }
+ </style>
+</head>
+<body>
+<div class="container">
+ <div class="wave" style="animation-delay: 0s;"></div>
+ <div class="wave" style="animation-delay: 0.1s;"></div>
+ <div class="wave" style="animation-delay: 0.2s;"></div>
+ <!-- Add more waves as needed -->
+</div>
+</body>
+</html>
