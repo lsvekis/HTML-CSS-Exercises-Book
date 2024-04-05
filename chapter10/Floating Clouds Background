@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes floatClouds {
+ from { background-position: 0 0; }
+ to { background-position: 1000px 0; }
+ }
+ .clouds-background {
+ height: 300px;
+ background-image: url('/Images/image1.png'); /* Use a repeating cloud pattern */
+ background-repeat: repeat-x;
+ animation: floatClouds 40s linear infinite;
+ }
+ </style>
+</head>
+<body>
+<div class="clouds-background"></div>
+</body>
+</html>
