@@ -8,40 +8,15 @@
             margin: auto;
             overflow: hidden;
         }
-        .slides {
+        .slide {
             display: none;
-            position: absolute;
         }
         input[type="radio"] {
             display: none;
         }
-        .slide {
-            display: none;
-        }
-        #slide1:checked ~ .slideshow-container .slide1,
-        #slide2:checked ~ .slideshow-container .slide2 {
+        #slide1:checked ~ .slideshow-container #slide1-content,
+        #slide2:checked ~ .slideshow-container #slide2-content {
             display: block;
-        }
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -22px;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-        }
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-        .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.8);
         }
         .dot-container {
             text-align: center;
@@ -61,31 +36,25 @@
         .dot:hover, .dot:focus {
             background-color: #717171;
         }
-        .active-dot {
-            background-color: #717171;
-        }
+        /* No CSS for .prev, .next because they are not functional without JavaScript */
     </style>
 </head>
 <body>
-
-<input id="slide1" type="radio" name="slide" checked="checked">
-<input id="slide2" type="radio" name="slide">
-
+<input id="slide1" type="radio" name="slides" checked="checked">
+<input id="slide2" type="radio" name="slides">
 <div class="slideshow-container">
-    <div class="slides slide1">
+    <div class="slide" id="slide1-content">
         <img src="https://via.placeholder.com/600x400" alt="Slide 1">
     </div>
-    <div class="slides slide2">
-        <img src="https://via.placeholder.com/600x400" alt="Slide 2">
+    <div class="slide" id="slide2-content">
+        <img src="https://via.placeholder.com/600x401" alt="Slide 2">
     </div>
     <!-- Add more slides as needed -->
 </div>
-
 <div class="dot-container">
     <label for="slide1" class="dot"></label>
     <label for="slide2" class="dot"></label>
     <!-- Add more dots as needed -->
 </div>
-
 </body>
 </html>
