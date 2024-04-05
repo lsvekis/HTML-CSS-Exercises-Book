@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .section {
+ position: relative;
+ padding: 50px;
+ background: #3498db;
+ }
+ .section + .section {
+ background: #2ecc71;
+ }
+ .section::after {
+ content: '';
+ position: absolute;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ height: 50px;
+ background: inherit;
+ transform: skewY(-3deg);
+ transform-origin: top left;
+ }
+ </style>
+</head>
+<body>
+<div class="section">Section 1</div>
+<div class="section">Section 2</div>
+</body>
+</html>
