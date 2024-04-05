@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .fixed-background {
+ background-image: url('background.jpg');
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 500px;
+ position: relative;
+ z-index: -1;
+ }
+ .content {
+ height: 1500px; /* Added height to demonstrate scrolling */
+ }
+ </style>
+</head>
+<body>
+<div class="content">Scroll to see the fixed background effect.</div>
+<div class="fixed-background"></div>
+<div class="content">More content that scrolls over the background.</div>
+</body>
+</html>
