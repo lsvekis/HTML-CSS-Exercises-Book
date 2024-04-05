@@ -11,9 +11,10 @@
             border-radius: 34px;
             box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px #cbcbcb;
             transition: background-color 0.2s;
+            cursor: pointer;
         }
-        .switch::after {
-            content: "";
+        /* Updated: Reintroducing .slider for visual clarity */
+        .slider {
             position: absolute;
             width: 26px;
             height: 26px;
@@ -26,22 +27,27 @@
         }
         .switch input {
             opacity: 0;
-            width: 0;
-            height: 0;
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
         }
-        .switch input:checked + ::after {
+        /* Fix: Correctly target the .slider span after the input is checked */
+        .switch input:checked + .slider {
             transform: translateX(26px);
             box-shadow: -2px -2px 4px #ffffff, 2px 2px 4px #cbcbcb;
         }
-        .switch input:checked ~ .switch {
-            background-color: #4CAF50;
+        /* Update: To change the background color of the switch when active */
+        .switch input:checked ~ .slider {
+            background-color: #4CAF50; /* This styles the slider, but if you want to style the background of the switch itself, you'd need to target .switch */
         }
     </style>
 </head>
 <body>
 <label class="switch">
     <input type="checkbox">
-    <!-- The .slider span was not used or necessary, so it has been removed. The ::after pseudo-element is used for the toggle knob. -->
+    <span class="slider"></span> <!-- Reintroduced the slider span for visual enhancement -->
 </label>
 </body>
 </html>
