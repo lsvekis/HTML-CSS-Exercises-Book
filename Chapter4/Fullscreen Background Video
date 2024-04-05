@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ body, html {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+ }
+ .video-background {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   min-width: 100%; 
+   min-height: 100%;
+   width: auto; 
+   height: auto;
+   z-index: -1; /* Ensure this is behind content but above the page background */
+   background-size: cover;
+ }
+ .content {
+   position: relative;
+   z-index: 1; /* Ensure content is above the video */
+   color: white;
+   padding: 20px;
+ }
+ </style>
+</head>
+<body>
+<video autoplay muted loop class="video-background">
+ <source src="/myvideo.mp4" type="video/mp4">
+ Your browser does not support the video tag.
+</video>
+<div class="content">Content on top of the video</div>
+</body>
+</html>
