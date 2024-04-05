@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .gradient-text {
+ font-size: 2rem;
+ background: -webkit-linear-gradient(#e66465, #9198e5);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+ </style>
+</head>
+<body>
+<h1 class="gradient-text">Gradient Text Effect</h1>
+</body>
+</html>
