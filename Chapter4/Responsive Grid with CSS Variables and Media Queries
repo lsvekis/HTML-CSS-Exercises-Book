@@ -1,1 +1,40 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ :root {
+ --columns: 4;
+ }
+ @media (max-width: 800px) {
+ :root {
+ --columns: 2;
+ }
+ }
+ @media (max-width: 400px) {
+ :root {
+ --columns: 1;
+ }
+ }
+ .grid-container {
+ display: grid;
+ grid-template-columns: repeat(var(--columns), 1fr);
+ gap: 10px;
+ }
+ .grid-item {
+ background-color: #f2f2f2;
+ padding: 20px;
+ text-align: center;
+ }
+ </style>
+</head>
+<body>
+<div class="grid-container">
+ <div class="grid-item">1</div>
+ <div class="grid-item">2</div>
+ <div class="grid-item">3</div>
+ <div class="grid-item">4</div>
+ <!-- Add more items as needed -->
+</div>
+</body>
+</html>
