@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .carousel {
+ display: flex;
+ overflow-x: auto;
+ scroll-snap-type: x mandatory;
+ }
+ .carousel-item {
+ scroll-snap-align: start;
+ flex: none;
+ width: 100vw;
+ position: relative;
+ }
+ .carousel-item img {
+ width: 100%;
+ height: auto;
+ }
+ /* Navigation buttons omitted for brevity */
+ </style>
+</head>
+<body>
+<div class="carousel">
+ <div class="carousel-item">
+ <img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1">
+ </div>
+ <div class="carousel-item">
+ <img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2">
+ </div>
+ <!-- Add more slides as needed -->
+</div>
+</body>
+</html>
