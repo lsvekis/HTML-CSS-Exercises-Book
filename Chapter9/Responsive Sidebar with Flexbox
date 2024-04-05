@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .container {
+ display: flex;
+ flex-wrap: wrap;
+ }
+ .main-content, .sidebar {
+ padding: 20px;
+ }
+ .main-content {
+ flex: 1;
+ order: 2;
+ }
+ .sidebar {
+ flex-basis: 200px;
+ order: 1;
+ background-color: #f4f4f4;
+ }
+ @media (max-width: 600px) {
+ .sidebar {
+ flex-basis: 100%;
+ order: 2;
+ }
+ .main-content {
+ order: 1;
+ }
+ }
+ </style>
+</head>
+<body>
+<div class="container">
+ <div class="main-content">Main Content</div>
+ <div class="sidebar">Sidebar</div>
+</div>
+</body>
