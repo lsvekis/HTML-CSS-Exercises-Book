@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .neu-button {
+ background-color: #e0e0e0;
+ border: none;
+ padding: 10px 30px;
+ font-size: 16px;
+ border-radius: 30px;
+ box-shadow: 8px 8px 15px #a3a3a3, -8px -8px 15px #ffffff;
+ cursor: pointer;
+ outline: none;
+ }
+ .neu-button:active {
+ box-shadow: inset 8px 8px 15px #a3a3a3, inset -8px -8px 15px #ffffff;
+ }
+ </style>
+</head>
+<body>
+<button class="neu-button">Click Me</button>
+</body>
+</html>
