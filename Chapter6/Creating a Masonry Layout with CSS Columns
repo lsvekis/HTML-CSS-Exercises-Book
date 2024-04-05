@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .masonry {
+ column-count: 4;
+ column-gap: 1em;
+ }
+ .masonry-item {
+ background-color: #eee;
+ margin-bottom: 1em;
+ break-inside: avoid;
+ }
+ @media (max-width: 800px) {
+ .masonry {
+ column-count: 2;
+ }
+ }
+ @media (max-width: 400px) {
+ .masonry {
+ column-count: 1;
+ }
+ }
+ </style>
+</head>
+<body>
+<div class="masonry">
+ <div class="masonry-item">Item 1</div>
+ <div class="masonry-item">Item 2</div>
+ <div class="masonry-item">Item 3</div>
+ <!-- More items -->
+</div>
+</body>
+</html>
