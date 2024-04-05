@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .fade-out-text {
+ position: relative;
+ width: 250px;
+ height: 100px;
+ overflow: hidden;
+ line-height: 25px;
+ }
+ .fade-out-text::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ width: 100%;
+ height: 50px;
+ background: linear-gradient(to bottom, transparent, white 75%);
+ }
+ </style>
+</head>
+<body>
+<div class="fade-out-text">
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et sapien pulvinar, pulvinar urna vel, aliquet nisl. In hac habitasse platea dictumst.
+</div>
+</body>
+</html>
