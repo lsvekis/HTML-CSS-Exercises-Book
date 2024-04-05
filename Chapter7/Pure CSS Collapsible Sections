@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .accordion input {
+ display: none;
+ }
+ .accordion label {
+ display: block;
+ background-color: #eee;
+ cursor: pointer;
+ padding: 10px;
+ border: 1px solid #ddd;
+ }
+ .accordion .content {
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 0.3s ease-out;
+ background-color: #f9f9f9;
+ }
+ .accordion input:checked + label + .content {
+ max-height: 100px; /* Adjust as necessary */
+ }
+ </style>
+</head>
+<body>
+<div class="accordion">
+ <input type="checkbox" id="section1" name="accordion">
+ <label for="section1">Section 1</label>
+ <div class="content">
+ <p>This is the collapsible content for section 1. Expand or collapse me!</p>
+ </div>
+</div>
+</body>
+</html>
