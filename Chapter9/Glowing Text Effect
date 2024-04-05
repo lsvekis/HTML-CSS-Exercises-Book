@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .glowing-text {
+ font-size: 32px;
+ color: #fff;
+ text-align: center;
+ text-shadow: 0 0 10px #00E5FF, 0 0 20px #00E5FF, 0 0 30px #00E5FF, 0 0 40px #00E5FF;
+ font-family: Arial, sans-serif;
+ }
+ </style>
+</head>
+<body>
+<h1 class="glowing-text">Glowing Text</h1>
+</body>
+</html>
