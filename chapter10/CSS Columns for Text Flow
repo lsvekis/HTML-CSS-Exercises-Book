@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .multi-column-text {
+ column-count: 3;
+ column-gap: 20px;
+ padding: 20px;
+ border: 1px solid #ccc;
+ column-rule: 1px solid #ddd; /* Adds a rule between columns */
+ }
+ </style>
+</head>
+<body>
+<div class="multi-column-text">
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ <!-- Repeat or add more content as needed -->
+</div>
+</body>
+</html>
