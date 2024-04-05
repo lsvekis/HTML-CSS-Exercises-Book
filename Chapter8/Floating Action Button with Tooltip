@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .fab {
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ width: 56px;
+ height: 56px;
+ border-radius: 50%;
+ background-color: #007bff;
+ color: #fff;
+ text-align: center;
+ line-height: 56px;
+ font-size: 24px;
+ cursor: pointer;
+ }
+ .tooltip {
+ visibility: hidden;
+ width: 120px;
+ background-color: black;
+ color: #fff;
+ text-align: center;
+ border-radius: 6px;
+ padding: 5px 0;
+ position: absolute;
+ z-index: 1;
+ bottom: 100%;
+ left: 50%;
+ margin-left: -60px;
+ opacity: 0;
+ transition: opacity 0.3s, visibility 0.3s;
+ }
+ .fab:hover .tooltip {
+ visibility: visible;
+ opacity: 1;
+ }
+ </style>
+</head>
+<body>
+<div class="fab">+
+ <div class="tooltip">Add New Item</div>
+</div>
+</body>
+</html>
