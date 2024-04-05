@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes scrollBackground {
+ from { background-position: 0 0; }
+ to { background-position: 0 100%; }
+ }
+ body {
+ height: 100vh;
+ background-image: url('background-pattern.png');
+ background-repeat: repeat-y;
+ animation: scrollBackground 15s linear infinite;
+ }
+ </style>
+</head>
+<body>
+</body>
+</html>
