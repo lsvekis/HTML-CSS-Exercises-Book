@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .checkbox-custom {
+ display: none;
+ }
+ .checkbox-custom + label {
+ position: relative;
+ padding-left: 25px;
+ cursor: pointer;
+ display: inline-block;
+ }
+ .checkbox-custom + label:before {
+ content: '';
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 15px;
+ height: 15px;
+ border: 2px solid #555;
+ border-radius: 3px;
+ background: white;
+ }
+ .checkbox-custom:checked + label:before {
+ background: #555;
+ }
+ .checkbox-custom:checked + label:after {
+ content: '';
+ position: absolute;
+ left: 4px;
+ top: 8px;
+ width: 5px;
+ height: 10px;
+ border: solid white;
+ border-width: 0 3px 3px 0;
+ transform: rotate(45deg);
+ }
+ </style>
+</head>
+<body>
+<input type="checkbox" id="check1" class="checkbox-custom">
+<label for="check1">Custom Checkbox</label>
+</body>
+</html>
