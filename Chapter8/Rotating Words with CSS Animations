@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes rotateWord {
+ 0% { opacity: 0; transform: translateY(-100%); }
+ 25% { opacity: 1; }
+ 75% { opacity: 1; }
+ 100% { opacity: 0; transform: translateY(100%); }
+ }
+ .rotating-words {
+ display: inline-block;
+ overflow: hidden;
+ }
+ .word {
+ display: inline-block;
+ animation: rotateWord 8s linear infinite 0s;
+ }
+ .word:nth-child(2) { animation-delay: 2s; }
+ .word:nth-child(3) { animation-delay: 4s; }
+ .word:nth-child(4) { animation-delay: 6s; }
+ </style>
+</head>
+<body>
+<div>
+ This is
+ <div class="rotating-words">
+ <span class="word">amazing!</span>
+ <span class="word">incredible!</span>
+ <span class="word">extraordinary!</span>
+ <span class="word">unbelievable!</span>
+ </div>
+</div>
+</body>
+</html>
