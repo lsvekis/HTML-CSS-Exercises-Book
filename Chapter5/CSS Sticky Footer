@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ body, html {
+ margin: 0;
+ padding: 0;
+ height: 100%;
+ }
+ .content {
+ min-height: 100%;
+ padding-bottom: 50px; /* Equal to footer height */
+ }
+ .footer {
+ position: relative;
+ margin-top: -50px; /* Equal to footer height */
+ height: 50px;
+ background-color: #333;
+ color: #fff;
+ text-align: center;
+ line-height: 50px;
+ }
+ </style>
+</head>
+<body>
+<div class="content">
+ <!-- Content goes here -->
+</div>
+<div class="footer">
+ Sticky Footer
+</div>
+</body>
+</html>
