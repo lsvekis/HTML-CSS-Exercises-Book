@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .dynamic-shadow {
+ transition: box-shadow 0.3s ease;
+ display: inline-block;
+ padding: 20px;
+ margin: 20px;
+ background-color: #fff;
+ border-radius: 8px;
+ box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+ }
+ .dynamic-shadow:hover {
+ box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+ }
+ </style>
+</head>
+<body>
+<div class="dynamic-shadow">Hover over me!</div>
+</body>
+</html>
