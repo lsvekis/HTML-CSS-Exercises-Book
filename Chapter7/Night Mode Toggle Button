@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ :root {
+ --background-color: #fff;
+ --text-color: #000;
+ }
+ body[night-mode="true"] {
+ --background-color: #333;
+ --text-color: #fff;
+ }
+ body {
+ background-color: var(--background-color);
+ color: var(--text-color);
+ transition: background-color 0.5s, color 0.5s;
+ }
+ .mode-toggle {
+ position: fixed;
+ top: 20px;
+ right: 20px;
+ cursor: pointer;
+ }
+ </style>
+</head>
+<body>
+<div class="mode-toggle">Toggle Night Mode</div>
+<script>
+ document.querySelector('.mode-toggle').addEventListener('click', function() {
+ const isNightMode = document.body.getAttribute('night-mode') === 'true';
+ document.body.setAttribute('night-mode', !isNightMode);
+ });
+</script>
+</body>
+</html>
