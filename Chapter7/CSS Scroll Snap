@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .scroll-container {
+ display: flex;
+ overflow-x: auto;
+ scroll-snap-type: x mandatory;
+ -webkit-overflow-scrolling: touch;
+ }
+ .scroll-item {
+ scroll-snap-align: start;
+ flex: none;
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 2em;
+ }
+ </style>
+</head>
+<body>
+<div class="scroll-container">
+ <div class="scroll-item" style="background: lightcoral;">Item 1</div>
+ <div class="scroll-item" style="background: lightblue;">Item 2</div>
+ <div class="scroll-item" style="background: lightgreen;">Item 3</div>
+ <!-- More scroll-items -->
+</div>
+</body>
+</html>
