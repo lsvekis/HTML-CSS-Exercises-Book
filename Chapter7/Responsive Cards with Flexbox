@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .card-container {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ padding: 20px;
+ justify-content: center;
+ }
+ .card {
+ flex: 1 1 200px;
+ border: 1px solid #ccc;
+ border-radius: 10px;
+ padding: 20px;
+ box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ }
+ .card img {
+ max-width: 100%;
+ height: auto;
+ border-radius: 10px 10px 0 0;
+ }
+ .card-content {
+ padding: 10px;
+ }
+ </style>
+</head>
+<body>
+<div class="card-container">
+ <div class="card">
+ <img src="https://via.placeholder.com/150" alt="Placeholder">
+ <div class="card-content">Card 1</div>
+ </div>
+ <div class="card">
+ <img src="https://via.placeholder.com/150" alt="Placeholder">
+ <div class="card-content">Card 2</div>
+ </div>
+ <!-- Add more cards as needed -->
+</div>
+</body>
+</html>
