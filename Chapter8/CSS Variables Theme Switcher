@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ :root {
+ --primary-color: #3498db;
+ --secondary-color: #2ecc71;
+ }
+ body {
+ background-color: var(--primary-color);
+ color: var(--secondary-color);
+ transition: background-color 0.3s, color 0.3s;
+ }
+ .theme-switcher {
+ cursor: pointer;
+ padding: 10px;
+ background-color: #fff;
+ border: none;
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ }
+ </style>
+</head>
+<body>
+<button class="theme-switcher" onclick="switchTheme()">Switch Theme</button>
+<script>
+ function switchTheme() {
+ const root = document.documentElement;
+ root.style.setProperty('--primary-color', '#2ecc71');
+ root.style.setProperty('--secondary-color', '#3498db');
+ }
+</script>
+</body>
+</html>
