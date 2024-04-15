@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .tabs {
+ display: flex;
+ flex-direction: column;
+ }
+ .tabs input[type="radio"] {
+ display: none;
+ }
+ .tabs label {
+ padding: 10px;
+ background: #ddd;
+ cursor: pointer;
+ }
+ .tab-content {
+ display: none;
+ padding: 20px;
+ border-top: 1px solid #ddd;
+ }
+ input[type="radio"]:checked + label + .tab-content {
+ display: block;
+ }
+ </style>
+</head>
+<body>
+<div class="tabs">
+ <input type="radio" id="tab1" name="tab-control" checked>
+ <label for="tab1">Tab One</label>
+ <div class="tab-content">Content One</div>
+ <input type="radio" id="tab2" name="tab-control">
+ <label for="tab2">Tab Two</label>
+ <div class="tab-content">Content Two</div>
+ <input type="radio" id="tab3" name="tab-control">
+ <label for="tab3">Tab Three</label>
+ <div class="tab-content">Content Three</div>
+ <!-- Add more tabs as needed -->
+</div>
+</body>
+</html>
