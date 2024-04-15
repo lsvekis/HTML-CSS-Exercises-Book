@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .card {
+ width: 200px;
+ height: 100px;
+ overflow: hidden;
+ transition: height 0.3s ease;
+ cursor: pointer;
+ background-color: #eee;
+ border-radius: 5px;
+ }
+ .card-content {
+ padding: 20px;
+ display: none;
+ }
+ .card.expanded {
+ height: 200px;
+ }
+ .card.expanded .card-content {
+ display: block;
+ }
+ </style>
+</head>
+<body>
+<div class="card" onclick="this.classList.toggle('expanded');">
+ <div class="card-content">More information here...</div>
+</div>
+</body>
+</html>
