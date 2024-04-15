@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .parallax {
+ height: 500px;
+ background-image: url('your-image-url.jpg');
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ }
+ .content {
+ height: 500px;
+ background-color: rgba(255, 255, 255, 0.6);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 24px;
+ }
+ </style>
+</head>
+<body>
+<div class="parallax"></div>
+<div class="content">Scroll to see the parallax effect.</div>
+<div class="parallax"></div>
+</body>
+</html>
