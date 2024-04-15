@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .breadcrumbs {
+ list-style: none;
+ padding: 0;
+ display: flex;
+ }
+ .breadcrumbs li {
+ margin-right: 5px;
+ }
+ .breadcrumbs a {
+ text-decoration: none;
+ color: #0275d8;
+ }
+ .breadcrumbs a:hover {
+ text-decoration: underline;
+ }
+ .breadcrumbs li::after {
+ content: '/';
+ margin-left: 5px;
+ }
+ .breadcrumbs li:last-child::after {
+ content: '';
+ margin-left: 0;
+ }
+ </style>
+</head>
+<body>
+<ul class="breadcrumbs">
+ <li><a href="#">Home</a></li>
+ <li><a href="#">Category</a></li>
+ <li>Current Page</li>
+</ul>
+</body>
+</html>
