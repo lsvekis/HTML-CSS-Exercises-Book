@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes scrollHorizontal {
+ 0% { transform: translateX(100%); }
+ 100% { transform: translateX(-100%); }
+ }
+ .scrolling-text {
+ white-space: nowrap;
+ overflow: hidden;
+ position: relative;
+ }
+ .text-content {
+ position: absolute;
+ display: inline-block;
+ animation: scrollHorizontal 10s linear infinite;
+ }
+ </style>
+</head>
+<body>
+<div class="scrolling-text">
+ <span class="text-content">This is an infinitely scrolling text. Great for news tickers and announcements.</span>
+</div>
+</body>
+</html>
