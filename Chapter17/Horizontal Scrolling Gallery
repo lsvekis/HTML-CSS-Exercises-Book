@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .scrolling-gallery {
+ display: flex;
+ overflow-x: auto;
+ padding: 20px;
+ }
+ .gallery-item {
+ flex: 0 0 auto;
+ width: 200px;
+ margin-right: 20px;
+ background: #f0f0f0;
+ text-align: center;
+ }
+ </style>
+</head>
+<body>
+<div class="scrolling-gallery">
+ <div class="gallery-item">Item 1</div>
+ <div class="gallery-item">Item 2</div>
+ <!-- More items here -->
+</div>
+</body>
+</html>
