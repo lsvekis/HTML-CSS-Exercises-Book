@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .zoom-background {
+ height: 500px;
+ background-image: url('Images/Image1.jpg');
+ background-size: 100%;
+ background-attachment: fixed;
+ transition: background-size 0.2s ease-out;
+ }
+ </style>
+</head>
+<body onscroll="zoomEffect()">
+<div class="zoom-background"></div>
+<script>
+ function zoomEffect() {
+ var scroll = window.pageYOffset || document.documentElement.scrollTop;
+ var size = 100 + scroll / 5; // Adjust the /5 to control the zoom speed
+ document.querySelector('.zoom-background').style.backgroundSize = size + '%';
+ }
+</script>
+</body>
+</html>
