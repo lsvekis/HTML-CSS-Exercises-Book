@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes gradientBorder {
+ 0% { border-image: linear-gradient(45deg, #3498db, #9b59b6) 1; }
+ 50% { border-image: linear-gradient(45deg, #9b59b6, #e74c3c) 1; }
+ 100% { border-image: linear-gradient(45deg, #e74c3c, #3498db) 1; }
+ }
+ .animated-border {
+ padding: 20px;
+ border: 4px solid;
+ border-image: linear-gradient(45deg, #3498db, #9b59b6) 1;
+ animation: gradientBorder 3s infinite linear;
+ }
+ </style>
+</head>
+<body>
+<div class="animated-border">Animated Gradient Border</div>
+</body>
+</html>
