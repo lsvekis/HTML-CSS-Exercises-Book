@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .accordion {
+ border: solid 1px #ddd;
+ border-radius: 5px;
+ overflow: hidden;
+ }
+ .accordion-item {
+ border-top: solid 1px #ddd;
+ }
+ .accordion-item:first-child {
+ border-top: none;
+ }
+ .accordion-header {
+ background-color: #f7f7f7;
+ cursor: pointer;
+ padding: 15px;
+ position: relative;
+ }
+ .accordion-header::after {
+ content: '+';
+ position: absolute;
+ right: 20px;
+ top: 50%;
+ transform: translateY(-50%);
+ transition: transform 0.2s ease;
+ }
+ .accordion-header.active::after {
+ content: '-';
+ }
+ .accordion-content {
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 0.2s ease-out;
+ padding: 0 15px;
+ }
+ .accordion-content.show {
+ max-height: 200px; /* Adjust based on content */
+ padding: 15px;
+ }
+ </style>
+</head>
+<body>
+<div class="accordion">
+ <div class="accordion-item">
+ <div class="accordion-header">Section 1</div>
+ <div class="accordion-content">Content 1</div>
+ </div>
+ <!-- Repeat for more sections -->
+</div>
+<script>
+ document.querySelectorAll('.accordion-header').forEach(button => {
+ button.addEventListener('click', () => {
+ const accordionContent = button.nextElementSibling;
+ button.classList.toggle('active');
+ accordionContent.classList.toggle('show');
+ });
+ });
+</script>
+</body>
+</html>
