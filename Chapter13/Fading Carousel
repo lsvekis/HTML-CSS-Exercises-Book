@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .carousel {
+ position: relative;
+ width: 600px;
+ height: 400px;
+ overflow: hidden;
+ }
+ .carousel-image {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ opacity: 0;
+ transition: opacity 2s ease;
+ }
+ .carousel-image.active {
+ opacity: 1;
+ }
+ </style>
+</head>
+<body>
+<div class="carousel">
+ <img src="Images/Image1.jpg" class="carousel-image active">
+ <img src="Images/Image2.jpg" class="carousel-image">
+ <!-- More images can be added -->
+</div>
+<script>
+ let currentIndex = 0;
+ const images = document.querySelectorAll('.carousel-image');
+ setInterval(() => {
+ images[currentIndex].classList.remove('active');
+ currentIndex = (currentIndex + 1) % images.length;
+ images[currentIndex].classList.add('active');
+ }, 4000); // Change image every 4 seconds
+</script>
+</body>
+</html>
