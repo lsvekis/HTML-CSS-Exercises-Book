@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .photo-gallery {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+ gap: 10px;
+ padding: 10px;
+ }
+ .photo {
+ width: 100%;
+ height: 200px;
+ object-fit: cover;
+ }
+ @media (max-width: 600px) {
+ .photo-gallery {
+ grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+ }
+ }
+ </style>
+</head>
+<body>
+<div class="photo-gallery">
+ <img src="Images/Image1.jpg" alt="Photo 1" class="photo">
+ <img src="Images/Image2.jpg" alt="Photo 2" class="photo">
+ <!-- More photos here -->
+</div>
+</body>
+</html>
