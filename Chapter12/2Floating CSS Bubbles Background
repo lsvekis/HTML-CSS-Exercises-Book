@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+    body{
+        background-color: aqua;
+    }
+    @keyframes floatBubbles {
+        0% { transform: translateY(100vh); }
+        100% { transform: translateY(-100vh); }
+    }
+    .bubbles-container {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    .bubble {
+        position: absolute;
+        bottom: -100px;  /* Start below the viewport */
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+        opacity: 0.7;
+        text-align: center;
+    }
+    .bubble:nth-child(odd) {
+        animation: floatBubbles 20s infinite linear;
+    }
+    .bubble:nth-child(even) {
+        animation: floatBubbles 15s infinite linear;
+    }
+    /* Example bubble sizes */
+    .bubble.small { width: 20px; height: 20px; left: 10%;line-height: 20px; }
+    .bubble.medium { width: 40px; height: 40px; left: 50%; line-height: 40px;}
+    .bubble.large { width: 60px; height: 60px; left: 80%; line-height: 60px;}
+ </style>
+</head>
+<body>
+<div class="bubbles-container">
+    <div class="bubble small">1</div>
+    <div class="bubble medium">2</div>
+    <div class="bubble large">3</div>
+    <!-- Add more bubbles as needed -->
+</div>
+</body>
+</html>
