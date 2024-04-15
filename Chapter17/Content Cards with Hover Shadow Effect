@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .card {
+ transition: box-shadow 0.3s ease;
+ padding: 20px;
+ margin: 10px;
+ border-radius: 8px;
+ background-color: #fff;
+ box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+ }
+ .card:hover {
+ box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+ }
+ </style>
+</head>
+<body>
+<div class="card">Card Content</div>
+</body>
+</html>
