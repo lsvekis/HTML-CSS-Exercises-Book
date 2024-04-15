@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ :root {
+ --primary-color: #007bff;
+ --secondary-color: #6c757d;
+ }
+ body {
+ background-color: var(--primary-color);
+ color: var(--secondary-color);
+ padding: 20px;
+ transition: background-color 0.3s, color 0.3s;
+ }
+ .theme-dark {
+ --primary-color: #343a40;
+ --secondary-color: #ffffff;
+ }
+ .theme-light {
+ --primary-color: #f8f9fa;
+ --secondary-color: #343a40;
+ }
+ button {
+ margin-top: 20px;
+ padding: 10px;
+ border: none;
+ background-color: var(--secondary-color);
+ color: var(--primary-color);
+ cursor: pointer;
+ }
+ </style>
+</head>
+<body>
+<h1>Theme Switcher</h1>
+<p>This text color changes based on the theme.</p>
+<button onclick="document.body.className='theme-dark'">Dark Theme</button>
+<button onclick="document.body.className='theme-light'">Light Theme</button>
+</body>
+</html>
