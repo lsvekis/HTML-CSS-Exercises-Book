@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .navbar {
+ display: flex;
+ justify-content: space-between;
+ background-color: #333;
+ padding: 1rem;
+ }
+ .nav-links {
+ display: flex;
+ list-style: none;
+ }
+ .nav-links li {
+ padding: 0 1rem;
+ }
+ .nav-links a {
+ text-decoration: none;
+ color: white;
+ }
+ .hamburger {
+ display: none;
+ cursor: pointer;
+ }
+ .bar {
+ display: block;
+ width: 25px;
+ height: 3px;
+ margin: 5px auto;
+ background-color: white;
+ }
+ @media (max-width: 600px) {
+ .nav-links {
+ display: none;
+ }
+ .hamburger {
+ display: block;
+ }
+ }
+ </style>
+</head>
+<body>
+<div class="navbar">
+ <h1 style="color: white;">Logo</h1>
+ <ul class="nav-links">
+ <li><a href="#">Home</a></li>
+ <li><a href="#">Services</a></li>
+ <li><a href="#">About</a></li>
+ <li><a href="#">Contact</a></li>
+ </ul>
+ <div class="hamburger" onclick="toggleMenu()">
+ <div class="bar"></div>
+ <div class="bar"></div>
+ <div class="bar"></div>
+ </div>
+</div>
+<script>
+ function toggleMenu() {
+ var links = document.querySelector('.nav-links');
+ links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+ }
+</script>
+</body>
