@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes slideIn {
+ from { transform: translateY(100%); opacity: 0; }
+ to { transform: translateY(0); opacity: 1; }
+ }
+ @keyframes fadeOut {
+ from { opacity: 1; }
+ to { opacity: 0; }
+ }
+ .toast {
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ background-color: #333;
+ color: #fff;
+ padding: 10px;
+ border-radius: 5px;
+ animation: slideIn 0.5s ease forwards, fadeOut 0.5s 2.5s ease forwards;
+ }
+ </style>
+</head>
+<body>
+<div class="toast">This is a toast message.</div>
+</body>
+</html>
