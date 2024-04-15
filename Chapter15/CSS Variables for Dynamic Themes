@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ :root {
+ --primary-color: #007bff;
+ --secondary-color: #6c757d;
+ }
+ body {
+ background-color: var(--primary-color);
+ color: var(--secondary-color);
+ transition: background-color 0.3s ease, color 0.3s ease;
+ }
+ .theme-switcher {
+ padding: 10px;
+ margin: 20px;
+ cursor: pointer;
+ }
+ </style>
+</head>
+<body>
+<div class="theme-switcher" onclick="document.documentElement.style.setProperty('--primary-color', '#28a745'); document.documentElement.style.setProperty('--secondary-color', '#ffffff');">Switch Theme</div>
+</body>
+</html>
