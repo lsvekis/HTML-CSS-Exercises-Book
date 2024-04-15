@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .circle {
+ width: 100px;
+ height: 100px;
+ background-color: #007bff;
+ border-radius: 50%;
+ float: left;
+ shape-outside: circle(50%);
+ margin-right: 20px;
+ }
+ .polygon {
+ width: 120px;
+ height: 100px;
+ background-color: #28a745;
+ float: left;
+ shape-outside: polygon(0 0, 100% 0, 50% 100%);
+ margin-right: 20px;
+ }
+ p {
+ text-align: justify;
+ }
+ </style>
+</head>
+<body>
+<div class="circle"></div>
+<div class="polygon"></div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
+</body>
+</html>
