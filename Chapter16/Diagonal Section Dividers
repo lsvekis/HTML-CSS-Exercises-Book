@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .section {
+ padding: 50px 0;
+ overflow: hidden;
+ position: relative;
+ background-color: #f8f9fa;
+ }
+ .section:nth-child(odd) {
+ background-color: #e9ecef;
+ }
+ .section::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ height: 50px;
+ background: inherit;
+ transform: skewY(-3deg);
+ transform-origin: top left;
+ }
+ .section:nth-child(odd)::after {
+ transform-origin: top right;
+ }
+ </style>
+</head>
+<body>
+<div class="section">Section 1</div>
+<div class="section">Section 2</div>
+<div class="section">Section 3</div>
+<!-- More sections -->
+</body>
+</html>
