@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes scroll {
+ 0% { background-position: 0 0; }
+ 100% { background-position: 0 100%; }
+ }
+ body {
+ animation: scroll 20s linear infinite;
+ background-image: url('background-pattern.png');
+ background-size: auto 100%;
+ }
+ </style>
+</head>
+<body>
+</body>
+</html>
