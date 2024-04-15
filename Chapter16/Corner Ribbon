@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .card {
+ position: relative;
+ width: 200px;
+ height: 200px;
+ background-color: #ddd;
+ margin: 50px;
+ }
+ .ribbon {
+ position: absolute;
+ top: 0;
+ right: 0;
+ background-color: #007bff;
+ color: white;
+ padding: 5px 10px;
+ transform: rotate(45deg);
+ transform-origin: top right;
+ }
+ </style>
+</head>
+<body>
+<div class="card">
+ <div class="ribbon">New</div>
+</div>
+</body>
+</html>
