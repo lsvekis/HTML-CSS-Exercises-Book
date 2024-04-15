@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .tilt-card {
+ perspective: 1000px;
+ width: 300px;
+ height: 200px;
+ margin: 20px;
+ transition: transform 0.5s ease;
+ transform-style: preserve-3d;
+ }
+ .tilt-card:hover {
+ transform: rotateY(20deg);
+ }
+ .card-content {
+ background-color: #3498db;
+ width: 100%;
+ height: 100%;
+ border-radius: 10px;
+ color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transform: rotateY(0deg);
+ }
+ </style>
+</head>
+<body>
+<div class="tilt-card">
+ <div class="card-content">Hover over me!</div>
+</div>
+</body>
+</html>
