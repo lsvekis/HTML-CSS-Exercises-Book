@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .card-stack {
+ perspective: 1000px;
+ width: 300px;
+ margin: auto;
+ }
+ .card {
+ background-color: #fff;
+ padding: 20px;
+ margin: 10px 0;
+ border-radius: 8px;
+ box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+ transform: rotateX(10deg);
+ transition: transform 0.3s ease;
+ }
+ .card:hover {
+ transform: rotateX(0deg);
+ margin-top: -20px;
+ }
+ </style>
+</head>
+<body>
+<div class="card-stack">
+ <div class="card">Card 1</div>
+ <div class="card">Card 2</div>
+ <div class="card">Card 3</div>
+ <!-- More cards can be added here -->
+</div>
+</body>
+</html>
