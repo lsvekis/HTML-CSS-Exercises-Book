@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .form-group {
+ position: relative;
+ margin-bottom: 15px;
+ }
+ .form-input {
+ width: 100%;
+ padding: 10px;
+ padding-top: 25px;
+ font-size: 16px;
+ }
+ .form-label {
+ position: absolute;
+ left: 10px;
+ top: 10px;
+ transition: 0.3s ease all;
+ pointer-events: none;
+ }
+ .form-input:focus + .form-label,
+ .form-input:not(:placeholder-shown) + .form-label {
+ top: -10px;
+ font-size: 12px;
+ color: #3498db;
+ }
+ </style>
+</head>
+<body>
+<div class="form-group">
+ <input type="text" class="form-input" placeholder=" " id="name">
+ <label class="form-label" for="name">Name</label>
+</div>
+</body>
+</html>
