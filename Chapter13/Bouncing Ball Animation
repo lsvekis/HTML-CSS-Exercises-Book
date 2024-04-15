@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes bounce {
+ 0%, 100% { transform: translateY(0); }
+ 50% { transform: translateY(-100px); }
+ }
+ .ball {
+ width: 40px;
+ height: 40px;
+ background-color: #3498db;
+ border-radius: 50%;
+ animation: bounce 2s infinite ease-in-out;
+ }
+ </style>
+</head>
+<body>
+<div class="ball"></div>
+</body>
+</html>
