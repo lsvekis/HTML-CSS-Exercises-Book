@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes floatBubbles {
+ 0% { transform: translateY(100%); }
+ 100% { transform: translateY(-100%); }
+ }
+ .bubble {
+ position: absolute;
+ bottom: -100px;
+ background-color: rgba(255, 255, 255, 0.7);
+ border-radius: 50%;
+ }
+ .bubble:nth-child(odd) {
+ animation: floatBubbles 20s infinite linear;
+ }
+ .bubble:nth-child(even) {
+ animation: floatBubbles 15s infinite linear;
+ }
+ /* Example bubble sizes */
+ .bubble.small { width: 20px; height: 20px; }
+ .bubble.medium { width: 40px; height: 40px; }
+ .bubble.large { width: 60px; height: 60px; }
+ .bubbles-container {
+ position: relative;
+ height: 100vh;
+ overflow: hidden;
+ }
+ </style>
+</head>
+<body>
+<div class="bubbles-container">
+ <div class="bubble small" style="left:10%;"></div>
+ <div class="bubble medium" style="left:50%;"></div>
+ <div class="bubble large" style="left:80%;"></div>
+ <!-- Add more bubbles as needed -->
+</div>
+</body>
+</html>
