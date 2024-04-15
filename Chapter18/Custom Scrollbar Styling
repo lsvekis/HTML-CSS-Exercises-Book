@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ /* Customizes the scrollbar track */
+ ::-webkit-scrollbar-track {
+ background-color: #f0f0f0;
+ }
+ /* Customizes the scrollbar thumb */
+ ::-webkit-scrollbar-thumb {
+ background-color: #007bff;
+ border-radius: 10px;
+ }
+ /* Customizes the scrollbar itself */
+ ::-webkit-scrollbar {
+ width: 8px;
+ }
+ body {
+ height: 200vh; /* Ensures the scrollbar is visible for demonstration */
+ }
+ </style>
+</head>
+<body>
+<h1>Custom Scrollbar Styling</h1>
+<p>Scroll down to see the custom scrollbar in action.</p>
+</body>
+</html>
