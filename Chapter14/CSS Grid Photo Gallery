@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .gallery {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ gap: 10px;
+ padding: 10px;
+ }
+ .gallery img {
+ width: 100%;
+ height: auto;
+ object-fit: cover;
+ }
+ /* Example of assigning grid areas for different images, optional based on your design preference */
+ .gallery img:nth-child(1) { grid-row: span 2; }
+ .gallery img:nth-child(2) { grid-column: span 2; }
+ </style>
+</head>
+<body>
+<div class="gallery">
+ <img src="Images/Image1.jpg" alt="Photo 1">
+ <img src="Images/Image2.jpg" alt="Photo 2">
+ <img src="Images/Image1.jpg" alt="Photo 3">
+ <!-- More images -->
+</div>
+</body>
+</html>
