@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .overlay-section {
+ position: relative;
+ color: white;
+ background-image: url('background.jpg');
+ background-size: cover;
+ height: 300px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ }
+ .overlay-section::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background: rgba(0, 0, 0, 0.5);
+ z-index: 1;
+ }
+ .text {
+ position: relative;
+ z-index: 2;
+ text-align: center;
+ }
+ </style>
+</head>
+<body>
+<div class="overlay-section">
+ <div class="text">
+ <h1>Title Goes Here</h1>
+ <p>Description text...</p>
+ </div>
+</div>
+</body>
+</html>
