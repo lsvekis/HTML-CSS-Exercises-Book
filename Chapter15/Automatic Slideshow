@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .slideshow-container {
+ position: relative;
+ width: 100%;
+ height: 300px;
+ }
+ .fade {
+ animation-name: fade;
+ animation-duration: 2.5s;
+ animation-iteration-count: infinite;
+ }
+ @keyframes fade {
+ from {opacity: .4} 
+ to {opacity: 1}
+ }
+ .slide {
+ position: absolute;
+ opacity: 0;
+ transition: opacity 0.5s ease;
+ }
+ .slide.active {
+ opacity: 1;
+ }
+ </style>
+</head>
+<body>
+<div class="slideshow-container">
+ <div class="slide fade active">Slide 1</div>
+ <div class="slide fade">Slide 2</div>
+ <!-- Add more slides -->
+</div>
+<script>
+ let slideIndex = 0;
+ showSlides();
+ function showSlides() {
+ let slides = document.querySelectorAll(".slide");
+ for (let i = 0; i < slides.length; i++) {
+ slides[i].classList.remove("active");
+ }
+ slideIndex++;
+ if (slideIndex > slides.length) {slideIndex = 1}
+ slides[slideIndex-1].classList.add("active");
+ setTimeout(showSlides, 2500); // Change image every 2.5 seconds
+ }
+</script>
+</body>
+</html>
