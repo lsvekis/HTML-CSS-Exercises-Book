@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+  .ripple-button {
+    position: relative;
+    overflow: hidden;
+    background-color: #6200ea;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    transform: scale(0);
+    animation: ripple-effect 0.5s linear;
+    pointer-events: none;
+  }
+
+  @keyframes ripple-effect {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+ </style>
+</head>
+<body>
+  <button class="ripple-button">Click Me</button>
+  <script>
+    document.querySelector('.ripple-button').addEventListener('click', function(e) {
+      let circle = document.createElement('span');
+      circle.classList.add('ripple');
+      this.appendChild(circle);
+      let d = Math.max(this.clientWidth, this.clientHeight);
+      circle.style.width = circle.style.height = `${d}px`;
+      let rect = this.getBoundingClientRect();
+      circle.style.left = `${e.clientX - rect.left - d / 2}px`;
+      circle.style.top = `${e.clientY - rect.top - d / 2}px`;
+      setTimeout(() => circle.remove(), 500); // Clean up after animation
+    });
+  </script>
+</body>
+</html>
