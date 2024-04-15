@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .search-bar {
+ transition: width 0.5s ease;
+ width: 150px;
+ height: 20px;
+ padding: 10px;
+ border: 1px solid #ddd;
+ font-size: 16px;
+ }
+ .search-bar:focus {
+ width: 250px;
+ }
+ </style>
+</head>
+<body>
+<input type="text" class="search-bar" placeholder="Search...">
+</body>
+</html>
