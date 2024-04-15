@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .section {
+ padding: 50px 0;
+ text-align: center;
+ color: #fff;
+ }
+ .section:nth-child(odd) {
+ background: #3498db;
+ }
+ .section:nth-child(even) {
+ background: #e74c3c;
+ }
+ .section::after {
+ content: '';
+ display: block;
+ height: 50px;
+ background: inherit;
+ transform: skewY(-3deg);
+ margin-top: -25px;
+ }
+ </style>
+</head>
+<body>
+<div class="section">Section 1</div>
+<div class="section">Section 2</div>
+<div class="section">Section 3</div>
+</body>
+</html>
