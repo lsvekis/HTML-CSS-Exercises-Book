@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .progress-container {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin: 20px;
+ list-style-type: none;
+ padding: 0;
+ }
+ .progress-step {
+ width: 30px;
+ height: 30px;
+ background-color: #ddd;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #fff;
+ transition: background-color 0.4s ease;
+ }
+ .progress-step.active {
+ background-color: #3498db;
+ }
+ .progress-bar {
+ flex-grow: 1;
+ height: 5px;
+ background-color: #ddd;
+ position: relative;
+ margin: 0 10px;
+ }
+ .progress-bar::after {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 33%; /* Update this value based on the current step */
+ background-color: #3498db;
+ transition: width 0.4s ease;
+ }
+ </style>
+</head>
+<body>
+<ul class="progress-container">
+ <li class="progress-step active">1</li>
+ <li class="progress-bar"></li>
+ <li class="progress-step">2</li>
+ <li class="progress-bar"></li>
+ <li class="progress-step">3</li>
+</ul>
+</body>
+</html>
