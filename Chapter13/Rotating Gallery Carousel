@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .carousel {
+ perspective: 1000px;
+ width: 600px;
+ height: 400px;
+ position: relative;
+ margin: auto;
+ overflow: hidden;
+ }
+ .carousel-image {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ opacity: 0;
+ transition: opacity 0.5s ease, transform 1s ease;
+ transform: rotateY(0deg) translateZ(-500px);
+ }
+ .carousel-image.active {
+ opacity: 1;
+ transform: rotateY(0deg) translateZ(0);
+ }
+ @keyframes rotateCarousel {
+ from { transform: rotateY(0deg); }
+ to { transform: rotateY(360deg); }
+ }
+ .carousel:hover {
+ animation: rotateCarousel 10s infinite linear;
+ }
+ </style>
+</head>
+<body>
+<div class="carousel">
+ <img src="image1.jpg" class="carousel-image active">
+ <img src="image2.jpg" class="carousel-image">
+ <img src="image3.jpg" class="carousel-image">
+ <!-- Additional images -->
+</div>
+</body>
+</html>
