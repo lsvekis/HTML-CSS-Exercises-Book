@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .fab {
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ width: 56px;
+ height: 56px;
+ background-color: #007bff;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
+ font-size: 24px;
+ cursor: pointer;
+ }
+ </style>
+</head>
+<body>
+<div class="fab">+</div>
+</body>
+</html>
