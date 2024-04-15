@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .nav-wheel {
+ width: 200px;
+ height: 200px;
+ border-radius: 50%;
+ position: relative;
+ }
+ .nav-item {
+ width: 100%;
+ position: absolute;
+ text-align: center;
+ transform-origin: 50% 100%;
+ }
+ /* Sample positioning for three items */
+ .nav-item:nth-child(1) { transform: rotate(0deg) translateY(-100px); }
+ .nav-item:nth-child(2) { transform: rotate(120deg) translateY(-100px); }
+ .nav-item:nth-child(3) { transform: rotate(240deg) translateY(-100px); }
+ .nav-wheel:hover {
+ animation: rotateWheel 2s infinite linear;
+ }
+ @keyframes rotateWheel {
+ from { transform: rotate(0deg); }
+ to { transform: rotate(360deg); }
+ }
+ </style>
+</head>
+<body>
+<div class="nav-wheel">
+ <div class="nav-item">Item 1</div>
+ <div class="nav-item">Item 2</div>
+ <div class="nav-item">Item 3</div>
+ <!-- More items as needed -->
+</div>
+</body>
+</html>
