@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .image-container {
+ width: 200px;
+ height: 300px;
+ position: relative;
+ overflow: hidden;
+ }
+ .image-container img {
+ width: 100%;
+ height: 100%;
+ transition: opacity 0.5s ease;
+ }
+ .image-container:hover img {
+ opacity: 0.5;
+ }
+ .image-container::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: #008CBA;
+ mix-blend-mode: multiply;
+ transition: opacity 0.5s ease;
+ opacity: 0;
+ }
+ .image-container:hover::before {
+ opacity: 1;
+ }
+ </style>
+</head>
+<body>
+<div class="image-container">
+ <img src="Images/Image1.jpg" alt="Image">
+</div>
+<!-- Repeat for more images -->
+</body>
+</html>
