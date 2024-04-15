@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes wave {
+ 0% { background-position-x: 0; }
+ 100% { background-position-x: 1000px; }
+ }
+ body {
+ animation: wave 30s linear infinite;
+ background-image: url('Images/Image1.jpg');
+ background-size: cover;
+ }
+ </style>
+</head>
+<body>
+</body>
+</html>
