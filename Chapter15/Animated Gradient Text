@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes gradientShift {
+ 0% { background-position: 0% 50%; }
+ 50% { background-position: 100% 50%; }
+ 100% { background-position: 0% 50%; }
+ }
+ .gradient-text {
+ font-size: 36px;
+ background: linear-gradient(45deg, #ff6b6b, #fbc531, #48dbfb, #1dd1a1);
+ background-size: 200% 200%;
+ animation: gradientShift 5s ease infinite;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+ </style>
+</head>
+<body>
+<div class="gradient-text">Animated Gradient Text</div>
+</body>
+</html>
