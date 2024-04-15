@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .zoom-effect-container {
+ overflow: hidden;
+ position: relative;
+ display: inline-block;
+ }
+ .image {
+ transition: transform 0.5s ease;
+ display: block;
+ width: 100%;
+ height: auto;
+ }
+ .zoom-effect-container:hover .image {
+ transform: scale(1.2);
+ }
+ </style>
+</head>
+<body>
+<div class="zoom-effect-container">
+ <img src="example-image.jpg" class="image" alt="Example">
+</div>
+</body>
+</html>
