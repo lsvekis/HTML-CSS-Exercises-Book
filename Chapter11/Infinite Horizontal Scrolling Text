@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <style>
- @keyframes scrollHorizontal {
- 0% { transform: translateX(100%); }
- 100% { transform: translateX(-100%); }
- }
- .scrolling-text {
- white-space: nowrap;
- overflow: hidden;
- position: relative;
- }
- .text-content {
- position: absolute;
- display: inline-block;
- animation: scrollHorizontal 10s linear infinite;
- }
- </style>
+<meta charset="UTF-8">
+<title>Infinite Horizontal Scrolling Text</title>
+<style>
+@keyframes scrollHorizontal {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+.scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    background: #f0f0f0; /* Added for better visibility */
+    width: 100%; /* Ensure it spans the full width of the viewport */
+    height: 50px; /* Set a fixed height */
+    line-height: 50px; /* Center text vertically */
+}
+
+.text-content {
+    position: absolute;
+    display: inline-block;
+    animation: scrollHorizontal 10s linear infinite;
+}
+</style>
 </head>
 <body>
 <div class="scrolling-text">
- <span class="text-content">This is an infinitely scrolling text. Great for news tickers and announcements.</span>
+    <span class="text-content">This is an infinitely scrolling text. Great for news tickers and announcements.</span>
 </div>
 </body>
 </html>
