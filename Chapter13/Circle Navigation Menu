@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .circle-menu {
+ width: 200px;
+ height: 200px;
+ border-radius: 50%;
+ position: relative;
+ }
+ .menu-item {
+ width: 40px;
+ height: 40px;
+ position: absolute;
+ text-align: center;
+ line-height: 40px;
+ background-color: #3498db;
+ color: #fff;
+ border-radius: 50%;
+ }
+ /* Example positioning for 4 items. Adjust degrees for more/less items */
+ .menu-item:nth-child(1) { transform: translate(150%, 0); }
+ .menu-item:nth-child(2) { transform: translate(0, 150%); }
+ .menu-item:nth-child(3) { transform: translate(-50%, 150%); }
+ .menu-item:nth-child(4) { transform: translate(150%, -50%); }
+ </style>
+</head>
+<body>
+<div class="circle-menu">
+ <div class="menu-item">1</div>
+ <div class="menu-item">2</div>
+ <div class="menu-item">3</div>
+ <div class="menu-item">4</div>
+ <!-- Add more menu items as needed -->
+</div>
+</body>
+</html>
