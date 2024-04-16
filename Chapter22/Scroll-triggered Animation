@@ -3,14 +3,14 @@
 <head>
  <style>
  .box {
- width: 100px;
- height: 100px;
- background: red;
- opacity: 0;
- transition: opacity 2s;
+   width: 100px;
+   height: 100px;
+   background: red;
+   opacity: 0; /* Start as invisible */
+   transition: opacity 2s; /* Smooth transition for the opacity */
  }
  .visible {
- opacity: 1 !important;
+   opacity: 1; /* Fully visible when the class is added */
  }
  </style>
 </head>
@@ -22,9 +22,12 @@
 window.addEventListener('scroll', function() {
  var element = document.getElementById('animatedBox');
  var position = element.getBoundingClientRect();
- // checking whether fully visible
- if(position.top >= 0 && position.bottom <= window.innerHeight) {
- element.classList.add('visible');
+
+ // Checking if the element is within the viewport
+ if (position.top < window.innerHeight && position.bottom >= 0) {
+   element.classList.add('visible');
+ } else {
+   element.classList.remove('visible'); // Reset the visibility when out of view
  }
 });
 </script>
