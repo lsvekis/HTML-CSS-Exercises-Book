@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .circle-progress {
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ background: conic-gradient(#4caf50 75%, #f3f3f3 0%);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 20px;
+ color: #333;
+ }
+ .percent {
+ position: relative;
+ z-index: 2;
+ }
+ .circle-progress::before {
+ content: '';
+ position: absolute;
+ top: 5px;
+ left: 5px;
+ right: 5px;
+ bottom: 5px;
+ background: #fff;
+ border-radius: 50%;
+ z-index: 1;
+ }
+ </style>
+</head>
+<body>
+<div class="circle-progress">
+ <div class="percent">75%</div>
+</div>
+</body>
+</html>
