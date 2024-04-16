@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .gallery {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 10px;
+ padding: 10px;
+ }
+ .gallery img {
+ width: 100%;
+ height: auto;
+ border-radius: 8px;
+ transition: transform 0.3s ease;
+ }
+ .gallery img:hover {
+ transform: scale(1.1);
+ }
+ </style>
+</head>
+<body>
+<div class="gallery">
+ <img src="Images/Image1.jpg" alt="Image 1">
+ <img src="Images/Image2.jpg" alt="Image 2">
+ <img src="Images/Image1.jpg" alt="Image 3">
+ <!-- More images -->
+</div>
+</body>
+</html>
