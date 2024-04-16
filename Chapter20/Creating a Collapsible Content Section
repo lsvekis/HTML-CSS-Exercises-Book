@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .collapsible {
+ background-color: #3498db;
+ color: white;
+ cursor: pointer;
+ padding: 18px;
+ width: 100%;
+ border: none;
+ text-align: left;
+ outline: none;
+ font-size: 15px;
+ }
+ .active, .collapsible:hover {
+ background-color: #2980b9;
+ }
+ .content {
+ padding: 0 18px;
+ display: none;
+ overflow: hidden;
+ background-color: #f1f1f1;
+ }
+ </style>
+</head>
+<body>
+<button class="collapsible">Click Me</button>
+<div class="content">
+ <p>This is the collapsible content. It is hidden by default, and will be shown when clicking on the button.</p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+ coll[i].addEventListener("click", function() {
+ this.classList.toggle("active");
+ var content = this.nextElementSibling;
+ if (content.style.display === "block") {
+ content.style.display = "none";
+ } else {
+ content.style.display = "block";
+ }
+ });
+}
+</script>
+</body>
+</html>
