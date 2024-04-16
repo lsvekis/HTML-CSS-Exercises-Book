@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes itemEntrance {
+ from {
+ transform: rotateX(90deg);
+ opacity: 0;
+ }
+ to {
+ transform: rotateX(0deg);
+ opacity: 1;
+ }
+ }
+ .nav-item {
+ animation: itemEntrance 0.5s ease forwards;
+ }
+ /* Delay the animation of each item */
+ .nav-item:nth-child(1) { animation-delay: 0s; }
+ .nav-item:nth-child(2) { animation-delay: 0.2s; }
+ .nav-item:nth-child(3) { animation-delay: 0.4s; }
+ </style>
+</head>
+<body>
+<nav>
+ <div class="nav-item">Home</div>
+ <div class="nav-item">About</div>
+ <div class="nav-item">Services</div>
+</nav>
+</body>
+</html>
