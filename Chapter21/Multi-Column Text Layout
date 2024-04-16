@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .multi-column {
+ column-count: 3;
+ column-gap: 20px;
+ padding: 10px;
+ }
+ </style>
+</head>
+<body>
+<div class="multi-column">
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor, et feugiat libero facilisis. Nullam nec aliquam odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque varius faucibus condimentum. Sed ac faucibus dolor, vel efficitur arcu.</p>
+ <!-- Additional content -->
+</div>
+</body>
+</html>
