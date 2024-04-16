@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .circle-container {
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ }
+ .circle {
+ width: 30vw;
+ height: 30vw;
+ background-color: #3498db;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: white;
+ font-size: 4vw;
+ margin: 20px;
+ }
+ </style>
+</head>
+<body>
+<div class="circle-container">
+ <div class="circle">Circle 1</div>
+ <div class="circle">Circle 2</div>
+ <div class="circle">Circle 3</div>
+</div>
+</body>
+</html>
