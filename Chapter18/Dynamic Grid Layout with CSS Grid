@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .grid-container {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+ gap: 10px;
+ padding: 10px;
+ }
+ .grid-item {
+ background-color: #2196F3;
+ color: #ffffff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100px;
+ }
+ </style>
+</head>
+<body>
+<div class="grid-container">
+ <div class="grid-item">1</div>
+ <div class="grid-item">2</div>
+ <div class="grid-item">3</div>
+ <!-- More grid items -->
+</div>
+</body>
+</html>
