@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+    .star-rating {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+        font-size: 30px;
+    }
+    .star-rating > span {
+        display: inline-block;
+        position: relative;
+    }
+    .star-rating > span:before {
+        content: "\2606"; /* Empty star */
+        position: absolute;
+    }
+    .star-rating > span.filled:before {
+        content: "\2605"; /* Filled star */
+    }
+ </style>
+</head>
+<body>
+<div class="star-rating">
+    <span class="filled">★</span>
+    <span class="filled">★</span>
+    <span class="filled">★</span>
+    <span>☆</span>
+    <span>☆</span>
+</div>
+</body>
+</html>
