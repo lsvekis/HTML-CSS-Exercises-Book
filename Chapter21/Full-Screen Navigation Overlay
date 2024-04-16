@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .overlay {
+ height: 0%;
+ width: 100%;
+ position: fixed;
+ z-index: 1;
+ top: 0;
+ left: 0;
+ background-color: rgb(0,0,0, 0.9);
+ overflow-y: hidden;
+ transition: 0.5s;
+ }
+ .overlay-content {
+ position: relative;
+ top: 25%;
+ width: 100%;
+ text-align: center;
+ margin-top: 30px;
+ }
+ .overlay a {
+ padding: 10px;
+ text-decoration: none;
+ font-size: 36px;
+ color: #818181;
+ display: block;
+ transition: 0.3s;
+ }
+ .overlay a:hover, .overlay a:focus {
+ color: #f1f1f1;
+ }
+ .overlay .closebtn {
+ position: absolute;
+ top: 20px;
+ right: 45px;
+ font-size: 60px;
+ }
+ </style>
+</head>
+<body>
+<div id="myNav" class="overlay">
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <div class="overlay-content">
+ <a href="#">Home</a>
+ <a href="#">About</a>
+ <a href="#">Services</a>
+ <a href="#">Contact</a>
+ </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+<script>
+function openNav() {
+ document.getElementById("myNav").style.height = "100%";
+}
+function closeNav() {
+ document.getElementById("myNav").style.height = "0%";
+}
+</script>
+</body>
+</html>
