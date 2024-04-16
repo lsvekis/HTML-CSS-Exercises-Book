@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            margin-top: 5px;
+            transition: background-color 0.6s ease;
+        }
+
+        /* Hidden checkbox */
+        .accordion-toggle {
+            display: none;
+        }
+
+        .accordion-toggle:checked + .accordion + .panel {
+            max-height: 1000px; /* Sufficiently high */
+            transition: max-height 0.2s ease-out;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+        .accordion:hover, .accordion-toggle:checked + .accordion {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Section 1 -->
+    <input type="checkbox" id="toggle1" class="accordion-toggle" />
+    <label for="toggle1" class="accordion">Section 1</label>
+    <div class="panel">
+        <p>Lorem ipsum...</p>
+    </div>
+
+    <!-- Section 2 -->
+    <input type="checkbox" id="toggle2" class="accordion-toggle" />
+    <label for="toggle2" class="accordion">Section 2</label>
+    <div class="panel">
+        <p>Dolor sit amet...</p>
+    </div>
+</body>
+</html>
