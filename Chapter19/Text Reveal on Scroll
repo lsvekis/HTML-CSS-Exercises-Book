@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes fadeInUp {
+ from {
+ transform: translateY(20px);
+ opacity: 0;
+ }
+ to {
+ transform: translateY(0);
+ opacity: 1;
+ }
+ }
+ .reveal-text {
+ opacity: 0;
+ animation: fadeInUp 1s ease-out forwards;
+ }
+ .reveal-text.visible {
+ opacity: 1;
+ }
+ </style>
+</head>
+<body onscroll="revealOnScroll()">
+<h1>Scroll down to see the effect</h1>
+<div class="reveal-text" style="margin-top: 500px;">This text will reveal on scroll!</div>
+<script>
+function revealOnScroll() {
+ var reveals = document.querySelectorAll('.reveal-text');
+ for (var i = 0; i < reveals.length; i++) {
+ var windowHeight = window.innerHeight;
+ var elementTop = reveals[i].getBoundingClientRect().top;
+ var elementVisible = 150; // Adjust based on when you want the text to appear
+ if (elementTop < windowHeight - elementVisible) {
+ reveals[i].classList.add("visible");
+ } else {
+ reveals[i].classList.remove("visible");
+ }
+ }
+}
+window.addEventListener('scroll', revealOnScroll);
+</script>
+</body>
+</html>
