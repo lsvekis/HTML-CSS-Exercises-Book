@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .parallax {
+ /* The image used */
+ background-image: url("parallax-image.jpg");
+ /* Set a specific height */
+ height: 500px;
+ /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ }
+ .content {
+ height: 500px;
+ background-color: rgba(255, 255, 255, 0.8);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 24px;
+ }
+ </style>
+</head>
+<body>
+<div class="parallax"></div>
+<div class="content">Scroll Up and Down to see the effect!</div>
+<div class="parallax"></div>
+</body>
+</html>
