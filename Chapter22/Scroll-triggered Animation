@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .box {
+ width: 100px;
+ height: 100px;
+ background: red;
+ opacity: 0;
+ transition: opacity 2s;
+ }
+ .visible {
+ opacity: 1 !important;
+ }
+ </style>
+</head>
+<body>
+<div style="height: 500px;">Scroll down</div>
+<div class="box" id="animatedBox">Animated Box</div>
+<div style="height: 1500px;">Scroll more</div>
+<script>
+window.addEventListener('scroll', function() {
+ var element = document.getElementById('animatedBox');
+ var position = element.getBoundingClientRect();
+ // checking whether fully visible
+ if(position.top >= 0 && position.bottom <= window.innerHeight) {
+ element.classList.add('visible');
+ }
+});
+</script>
+</body>
+</html>
