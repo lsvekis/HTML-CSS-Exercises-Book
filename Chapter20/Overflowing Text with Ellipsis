@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Sets the basic styling for the container */
+        .text-container {
+            width: 200px; /* Fixed width to trigger overflow */
+            white-space: nowrap; /* Prevents text from wrapping to the next line */
+            overflow: hidden; /* Hides any overflow beyond the set width */
+            text-overflow: ellipsis; /* Replaces overflow text with ellipsis */
+            border: 1px solid #ccc; /* Optional: adds a border to visualize the container's bounds */
+            padding: 10px; /* Optional: adds padding for aesthetic spacing */
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        This is an example of a very long text that will not fit in the container.
+    </div>
+</body>
+</html>
