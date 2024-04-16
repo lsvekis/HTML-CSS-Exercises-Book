@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .tab {
+ overflow: hidden;
+ border: 1px solid #ccc;
+ background-color: #f1f1f1;
+ }
+ .tab button {
+ background-color: inherit;
+ float: left;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+ }
+ .tab button:hover {
+ background-color: #ddd;
+ }
+ .tab button.active {
+ background-color: #ccc;
+ }
+ .tab-content {
+ display: none;
+ padding: 6px 12px;
+ border: 1px solid #ccc;
+ border-top: none;
+ }
+ </style>
+</head>
+<body>
+<div class="tab">
+ <button class="tablinks" onclick="openTab(event, 'Tab1')">Tab 1</button>
+ <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+ <button class="tablinks" onclick="openTab(event, 'Tab3')">Tab 3</button>
+</div>
+<div id="Tab1" class="tab-content">
+ <h3>Tab 1</h3>
+ <p>This is Tab 1 content.</p>
+</div>
+<div id="Tab2" class="tab-content">
+ <h3>Tab 2</h3>
+ <p>This is Tab 2 content.</p>
+</div>
+<div id="Tab3" class="tab-content">
+ <h3>Tab 3</h3>
+ <p>This is Tab 3 content.</p>
+</div>
+<script>
+function openTab(evt, tabName) {
+ var i, tabcontent, tablinks;
+ tabcontent = document.getElementsByClassName("tab-content");
+ for (i = 0; i < tabcontent.length; i++) {
+ tabcontent[i].style.display = "none";
+ }
+ tablinks = document.getElementsByClassName("tablinks");
+ for (i = 0; i < tablinks.length; i++) {
+ tablinks[i].className = tablinks[i].className.replace(" active", "");
+ }
+ document.getElementById(tabName).style.display = "block";
+ evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
