@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .text-reveal-container {
+ position: relative;
+ display: inline-block;
+ }
+ .reveal-text {
+ visibility: hidden;
+ width: 120px;
+ background-color: black;
+ color: white;
+ text-align: center;
+ border-radius: 6px;
+ padding: 5px 0;
+ position: absolute;
+ z-index: 1;
+ bottom: 100%;
+ left: 50%;
+ margin-left: -60px;
+ }
+ .text-reveal-container:hover .reveal-text {
+ visibility: visible;
+ }
+ </style>
+</head>
+<body>
+<div class="text-reveal-container">Hover over me
+ <span class="reveal-text">Additional information</span>
+</div>
+</body>
+</html>
