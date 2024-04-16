@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .lightbox {
+ display: none;
+ position: fixed;
+ z-index: 2;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.8);
+ justify-content: center;
+ align-items: center;
+ }
+ .lightbox img {
+ max-width: 90%;
+ max-height: 90%;
+ }
+ .lightbox:target {
+ display: flex;
+ }
+ </style>
+</head>
+<body>
+<a href="#img1">
+ <img src="thumbnail1.jpg" alt="Thumbnail 1" style="width:100px;height:auto;">
+</a>
+<div id="img1" class="lightbox">
+ <img src="image1.jpg" alt="Image 1">
+</div>
+<!-- Repeat for more images -->
+</body>
+</html>
