@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .image-container {
+ position: relative;
+ width: 300px;
+ height: 200px;
+ }
+ .image-overlay {
+ position: absolute;
+ bottom: 0;
+ background: rgb(0, 0, 0);
+ background: rgba(0, 0, 0, 0.5); /* Black see-through */
+ color: #f1f1f1;
+ width: 100%;
+ transition: .5s ease;
+ opacity:0;
+ color: white;
+ font-size: 20px;
+ padding: 20px;
+ text-align: center;
+ }
+ .image-container:hover .image-overlay {
+ opacity: 1;
+ }
+ </style>
+</head>
+<body>
+<div class="image-container">
+ <img src="example-image.jpg" alt="Example" style="width:100%;">
+ <div class="image-overlay">Hover to Reveal Content</div>
+</div>
+</body>
+</html>
