@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .flip-card {
+ background-color: transparent;
+ width: 200px;
+ height: 300px;
+ perspective: 1000px;
+ margin: 20px;
+ }
+ .flip-card-inner {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ text-align: center;
+ transition: transform 0.6s;
+ transform-style: preserve-3d;
+ }
+ .flip-card:hover .flip-card-inner {
+ transform: rotateY(180deg);
+ }
+ .flip-card-front, .flip-card-back {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ backface-visibility: hidden;
+ }
+ .flip-card-front {
+ background-color: #bbb;
+ color: black;
+ }
+ .flip-card-back {
+ background-color: #2980b9;
+ color: white;
+ transform: rotateY(180deg);
+ }
+ </style>
+</head>
+<body>
+<div class="flip-card">
+ <div class="flip-card-inner">
+ <div class="flip-card-front">
+ <h3>Front Side</h3>
+ </div>
+ <div class="flip-card-back">
+ <h3>Back Side</h3>
+ <p>More information here.</p>
+ </div>
+ </div>
+</div>
+</body>
+</html>
