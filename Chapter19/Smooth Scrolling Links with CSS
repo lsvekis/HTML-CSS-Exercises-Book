@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ html {
+ scroll-behavior: smooth;
+ }
+ </style>
+</head>
+<body>
+<h2>Smooth Scrolling</h2>
+<p>Click on the links below to smoothly scroll to the corresponding section.</p>
+<div style="background-color:lightgray;height:2000px;padding-top:10px;">
+ <a href="#section1">Go to Section 1</a>
+ <a href="#section2" style="margin-left:20px;">Go to Section 2</a>
+ <div id="section1" style="height:500px;">
+ <h2>Section 1</h2>
+ </div>
+ <div id="section2" style="height:500px;">
+ <h2>Section 2</h2>
+ </div>
+</div>
+</body>
+</html>
