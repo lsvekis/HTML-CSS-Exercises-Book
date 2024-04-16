@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .section {
+ position: relative;
+ width: 100%;
+ padding: 50px 0;
+ }
+ .section:nth-child(even) {
+ background-color: #f9f9f9;
+ }
+ .diagonal-divider {
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ height: 50px;
+ background: linear-gradient(to right bottom, transparent 49%, #f9f9f9 50%);
+ }
+ .section:nth-child(odd) .diagonal-divider {
+ background: linear-gradient(to right top, transparent 49%, #fff 50%);
+ }
+ </style>
+</head>
+<body>
+<div class="section">
+ Section 1
+ <div class="diagonal-divider"></div>
+</div>
+<div class="section">
+ Section 2
+ <div class="diagonal-divider"></div>
+</div>
+</body>
+</html>
