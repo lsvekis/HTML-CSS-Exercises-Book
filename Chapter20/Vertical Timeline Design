@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .timeline {
+ position: relative;
+ max-width: 600px;
+ margin: 0 auto;
+ }
+ .timeline::after {
+ content: '';
+ position: absolute;
+ width: 6px;
+ background-color: #ddd;
+ top: 0;
+ bottom: 0;
+ left: 50%;
+ margin-left: -3px;
+ }
+ .container {
+ padding: 10px 40px;
+ position: relative;
+ background-color: inherit;
+ width: 50%;
+ }
+ .left {
+ left: 0;
+ }
+ .right {
+ left: 50%;
+ }
+ .container::after {
+ content: '';
+ position: absolute;
+ width: 25px;
+ height: 25px;
+ right: -17px;
+ background-color: white;
+ border: 4px solid #ddd;
+ top: 15px;
+ border-radius: 50%;
+ z-index: 1;
+ }
+ .right::after {
+ left: -17px;
+ }
+ .content {
+ padding: 20px;
+ background-color: #f9f9f9;
+ position: relative;
+ border-radius: 6px;
+ }
+ /* Add media queries for small screens */
+ </style>
+</head>
+<body>
+<div class="timeline">
+ <div class="container left">
+ <div class="content">
+ <h2>2021</h2>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+ </div>
+ </div>
+ <div class="container right">
+ <div class="content">
+ <h2>2022</h2>
+ <p>Phasellus scelerisque sed mi sit amet varius.</p>
+ </div>
+ </div>
+ <!-- Add more events here -->
+</div>
+</body>
+</html>
