@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ @keyframes bounce {
+ 0%, 100% {
+ transform: translateY(0);
+ }
+ 50% {
+ transform: translateY(-20px);
+ }
+ }
+ .loader {
+ display: flex;
+ justify-content: space-around;
+ align-items: flex-end;
+ width: 100px;
+ height: 50px;
+ margin: 0 auto;
+ }
+ .dot {
+ width: 15px;
+ height: 15px;
+ background-color: #3498db;
+ border-radius: 50%;
+ animation: bounce 0.6s infinite alternate;
+ }
+ .dot:nth-child(2) {
+ animation-delay: 0.2s;
+ }
+ .dot:nth-child(3) {
+ animation-delay: 0.4s;
+ }
+ </style>
+</head>
+<body>
+<div class="loader">
+ <div class="dot"></div>
+ <div class="dot"></div>
+ <div class="dot"></div>
+</div>
+</body>
+</html>
