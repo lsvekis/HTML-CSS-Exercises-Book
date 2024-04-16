@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .card {
+ background-color: #fff;
+ width: 100%;
+ max-width: 300px;
+ margin: 20px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+ overflow: hidden;
+ border-radius: 10px;
+ }
+ .card:hover {
+ transform: scale(1.05);
+ box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+ }
+ .card img {
+ width: 100%;
+ height: auto;
+ }
+ .card-content {
+ padding: 20px;
+ }
+ .card-title {
+ margin: 0;
+ color: #333;
+ }
+ .card-description {
+ color: #666;
+ font-size: 14px;
+ }
+ </style>
+</head>
+<body>
+<div class="card">
+ <img src="image-url.jpg" alt="Image">
+ <div class="card-content">
+ <h2 class="card-title">Card Title</h2>
+ <p class="card-description">This is a brief description of what the card is about.</p>
+ </div>
+</div>
+</body>
+</html>
