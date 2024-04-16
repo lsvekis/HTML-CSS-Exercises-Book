@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .fade-in-section {
+ opacity: 0;
+ transform: translateY(20px);
+ transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+ will-change: opacity, transform;
+ }
+ .fade-in-section.visible {
+ opacity: 1;
+ transform: none;
+ }
+ </style>
+</head>
+<body>
+<div class="fade-in-section">Section 1</div>
+<div class="fade-in-section">Section 2</div>
+<div class="fade-in-section">Section 3</div>
+<script>
+window.addEventListener('scroll', fadeInSections);
+function fadeInSections() {
+ const sections = document.querySelectorAll('.fade-in-section');
+ for (const section of sections) {
+ const sectionTop = section.getBoundingClientRect().top;
+ const isVisible = sectionTop < window.innerHeight - 50; // Adjust as needed
+ if (isVisible) {
+ section.classList.add('visible');
+ }
+ }
+}
+</script>
+</body>
+</html>
