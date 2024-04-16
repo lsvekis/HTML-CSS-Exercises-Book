@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .accordion {
+ background-color: #eee;
+ color: #444;
+ cursor: pointer;
+ padding: 18px;
+ width: 100%;
+ text-align: left;
+ border: none;
+ outline: none;
+ transition: background-color 0.6s ease;
+ margin-top: 5px;
+ }
+ .active, .accordion:hover {
+ background-color: #ccc;
+ }
+ .panel {
+ padding: 0 18px;
+ background-color: white;
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 0.2s ease-out;
+ }
+ </style>
+</head>
+<body>
+<button class="accordion">Section 1</button>
+<div class="panel">
+ <p>Lorem ipsum...</p>
+</div>
+<button class="accordion">Section 2</button>
+<div class="panel">
+ <p>Dolor sit amet...</p>
+</div>
+<script>
+var acc = document.querySelectorAll(".accordion");
+for (var i = 0; i < acc.length; i++) {
+ acc[i].addEventListener("click", function() {
+ this.classList.toggle("active");
+ var panel = this.nextElementSibling;
+ if (panel.style.maxHeight) {
+ panel.style.maxHeight = null;
+ } else {
+ panel.style.maxHeight = panel.scrollHeight + "px";
+ } 
+ });
+}
+</script>
+</body>
+</html>
