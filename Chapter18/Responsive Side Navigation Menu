@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ /* Side Navigation Menu Base Styles */
+ .sidenav {
+ height: 100%;
+ width: 250px;
+ position: fixed;
+ z-index: 1;
+ top: 0;
+ left: -250px; /* Hidden by default */
+ background-color: #111;
+ overflow-x: hidden;
+ transition: 0.5s; /* Smooth sliding effect */
+ padding-top: 60px;
+ }
+ .sidenav a {
+ padding: 10px 15px;
+ text-decoration: none;
+ font-size: 25px;
+ color: #818181;
+ display: block;
+ transition: 0.3s;
+ }
+ .sidenav a:hover {
+ color: #f1f1f1;
+ }
+ /* Hamburger Menu - for demonstration */
+ .hamburger {
+ cursor: pointer;
+ font-size: 30px;
+ margin: 10px;
+ }
+ </style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+ <a href="#">About</a>
+ <a href="#">Services</a>
+ <a href="#">Clients</a>
+ <a href="#">Contact</a>
+</div>
+<span class="hamburger" onclick="toggleNav()">☰</span>
+<script>
+ function toggleNav() {
+ var nav = document.getElementById("mySidenav");
+ if (nav.style.left === "-250px") {
+ nav.style.left = "0";
+ } else {
+ nav.style.left = "-250px";
+ }
+ }
+</script>
+</body>
+</html>
