@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .zigzag {
+ position: relative;
+ background-color: #f0f0f0;
+ padding: 50px;
+ text-align: center;
+ }
+ .zigzag::before {
+ content: "";
+ position: absolute;
+ bottom: -10px;
+ left: 0;
+ width: 100%;
+ height: 20px;
+ background: url('zigzag-pattern.png') repeat-x;
+ }
+ </style>
+</head>
+<body>
+<div class="zigzag">This is a content box with a zigzag border.</div>
+</body>
+</html>
