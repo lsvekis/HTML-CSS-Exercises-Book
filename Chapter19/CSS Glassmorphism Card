@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .glass-card {
+ width: 300px;
+ padding: 20px;
+ background: rgba(255, 255, 255, 0.2);
+ border-radius: 10px;
+ backdrop-filter: blur(10px);
+ border: 1px solid rgba(255, 255, 255, 0.3);
+ margin: 50px;
+ text-align: center;
+ }
+ </style>
+</head>
+<body>
+<div class="glass-card">
+ <h2>Glassmorphism Effect</h2>
+ <p>This card uses CSS backdrop filters to achieve a glass-like effect.</p>
+</div>
+</body>
+</html>
