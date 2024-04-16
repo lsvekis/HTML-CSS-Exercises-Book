@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .image-container {
+ position: relative;
+ width: 50%;
+ }
+ .overlay {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background-color: #008CBA;
+ overflow: hidden;
+ width: 100%;
+ height: 0;
+ transition: .5s ease;
+ }
+ .image-container:hover .overlay {
+ height: 100%;
+ }
+ .text {
+ color: white;
+ font-size: 20px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+ }
+ </style>
+</head>
+<body>
+<div class="image-container">
+ <img src="image.jpg" alt="Avatar" style="width:100%">
+ <div class="overlay">
+ <div class="text">Hello World</div>
+ </div>
+</div>
+</body>
+</html>
