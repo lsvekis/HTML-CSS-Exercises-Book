@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .hover-lift {
+ transition: box-shadow 0.3s ease;
+ padding: 20px;
+ margin: 30px;
+ border-radius: 5px;
+ box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+ }
+ .hover-lift:hover {
+ box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+ }
+ </style>
+</head>
+<body>
+<div class="hover-lift">Hover over me!</div>
+</body>
+</html>
