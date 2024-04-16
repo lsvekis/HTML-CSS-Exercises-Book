@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ .animated-underline {
+ position: relative;
+ padding-bottom: 5px;
+ }
+ .animated-underline::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 0%;
+ height: 2px;
+ background-color: #3498db;
+ transition: width 0.3s ease;
+ }
+ .animated-underline:hover::after {
+ width: 100%;
+ }
+ </style>
+</head>
+<body>
+<p><span class="animated-underline">Hover over me</span> to see the underline effect.</p>
+</body>
+</html>
